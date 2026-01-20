@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Web Developer Portfolio</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- Custom External CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg data-bs-theme="dark" fixed-top">
+        <div class="container mx-auto">
+            <a class="navbar-brand" href="#landing">EP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#landing">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">My Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tools">Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Landing Section Start -->
+    <section id="landing" class="landing-section">
+        <div class="container mx-auto">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="photo-holder mx-auto">
+                        <img class="landing-photo" src="./images/photo.png" alt="Photo of Edryl">
+                    </div>
+                    <p class="landing-intro">Hello World! My name is <strong>Edryl</strong>, and I'm a</p>
+                    <h1 class="landing-title">Full Stack Web Developer</h1>
+                    
+                    <p id="par1" class="landing-subtitle">I&apos;m a developer building on a foundation of professional communication and analytical problem-solving honed in the BPO industry. I create clean, user-centered web applications with a focus on practical functionality and thoughtful design.</p>  
+                    <p id="par2" class="landing-subtitle">I work with HTML, CSS, Bootstrap, and Git, and I'm actively expanding my technical capabilities through hands-on projects and structured learning. This portfolio represents both my current work and my commitment to continuous growth as I build toward production-ready development.</p>
+                    <a href="#projects" class="btn btn-primary btn-cta">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Landing Section End -->
+
+    <!-- Projects Section Start -->
+    <section id="projects" class="projects-section">
+        <div class="container mx-auto">
+
+            <h2 class="section-title">My Projects</h2>
+
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto">
+                    <a class="project-link" href="#" target="_blank">
+                        <div class="project-card">
+                            <div class="img-holder">
+                            <img src="./images/documentation.png" alt="Project 1" class="project-image">
+                            </div>           
+                            <div class="project-content">
+                                <h3 class="project-title">E-Commerce API Documentaton</h3>
+                                <p class="project-description">Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published publicly using Postman.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto">
+                    <a class="project-link" href="#" target="_blank">
+                        <div class="project-card">
+                            <div class="img-holder">
+                                <img src="./images/course-documentation.png" alt="Project 2" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Course Booking API Documentation</h3>
+                                <p class="project-description">RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto">
+                    <a class="project-link" href="#" target="_blank">
+                        <div class="project-card">
+                            <div class="img-holder">
+                                <img src="./images/course-booking.png" alt="Project 3" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Course Booking App</h3>
+                                <p class="project-description">A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto">
+                    <a class="project-link" href="#" target="_blank">
+                        <div class="project-card">
+                            <div class="img-holder">
+                                <img src="./images/ecommerce.png" alt="Project 4" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">E-commerce App</h3>
+                                <p class="project-description">MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto">
+                    <a class="project-link" href="#" target="_blank">
+                        <div class="project-card">
+                            <div class="img-holder">
+                                <img src="./images/flight.png" alt="Project 5" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Airline Booking System Mockup</h3>
+                                <p class="project-description">Side Project: Conceptual design
+                                showcasing an intuitive Ul for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.</p>
+                            </div>
+                        </div>
+                    </a>    
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto">
+                    <a class="project-link" href="#" target="_blank">
+                        <div class="project-card">
+                            <div class="img-holder">
+                            <img src="./images/prototype.jpg" alt="Project 6" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Airline Booking System Prototype</h3>
+                                <p class="project-description">Side Project: Interactive prototype
+                                simulating end-to-end airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket management.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Project 7 -->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto">
+                    <a class="project-link" href="#" target="_blank">
+                        <div class="project-card">
+                            <div class="img-holder">
+                                <img src="./images/capstone.jpg" alt="Project 7" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Short Courses Capstone</h3>
+                                <p class="project-description">Placeholder for my short courses capstone project.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Project 8 -->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto">
+                    <a class="project-link" href="https://github.com/deyperfect/CS50x-2025-Portfolio" target="_blank">
+                        <div class="project-card">
+                            <div class="img-holder">
+                                <img src="./images/cs50.png" alt="Project 8" class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">CS50X 2025 Portoflio</h3>
+                                <p class="project-description">A curated collection of problem sets and coding projects from Harvard's CS50 2025. This compilation demonstrates foundational programming skills, including C, Python, SQL, and web development with HTML, CSS, and JavaScript. course.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+    <!-- Projects Section End -->
+
+    <!-- Tools Section Start-->
+    <section id="tools" class="tools-section">
+        <div class="container mx-auto">
+            <h2 class="section-title">Tools</h2>
+            <div class="row g-2">
+                <div class="col-4 col-lg-2">
+                    <div class="tool-card">
+                        <img class="img-fluid" src="./images/html.png" alt="HTML Logo">
+                        <h3 class="tool-name">HTML5</h3>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-2">
+                    <div class="tool-card">
+                        <img class="img-fluid" src="./images/css.png" alt="CSS Logo">
+                        <h3 class="tool-name">CSS3</h3>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-2">
+                    <div class="tool-card">
+                        <img class="img-fluid" src="./images/bootstrap.png" alt="Bootstrap Logo">
+                        <h3 class="tool-name">Bootstrap</h3>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-2">
+                    <div class="tool-card">
+                        <img class="img-fluid" src="./images/js.png" alt="Javascript Logo">
+                        <h3 class="tool-name">Javascript</h3>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-2">
+                    <div class="tool-card">
+                        <img class="img-fluid" src="./images/figma.png" alt="Figma Logo">
+                        <h3 class="tool-name">Figma</h3>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-2">
+                    <div class="tool-card">
+                        <img class="img-fluid" src="./images/git.png" alt="Git Logo">
+                        <h3 class="tool-name">Git</h3>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Tools Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact-section">
+        <div class="container mx-auto">
+            <h2 class="section-title">Contact</h2>
+            <div class="row justify-content-center">
+                <div class="col-10 col-lg-6">
+                    <form id="contactForm" class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                            <div class="invalid-feedback">
+                                Please provide your name.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid email address.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            <div class="invalid-feedback">
+                                Please provide a message.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2026 EP Developer Portfolio.</p> 
+            <div class="icon-holder">
+                <!-- GitHub -->
+                <a href="https://github.com/deyperfect" target="_blank" aria-label="GitHub">
+                    <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM252.8 8c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zM105.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/edrylpalinis/" target="_blank" aria-label="LinkedIn">
+                    <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor" d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"/>
+                    </svg>
+                </a>
+
+                <!-- Notion -->
+                <a href="https://crimson-energy-8fa.notion.site/Edryl-Palinis-2b87a534a331803baaa8d597e2d2ac54?pvs=74" target="_blank" aria-label="Notion">
+                    <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor" d="M94.9 100.2c14.9 12.1 20.5 11.2 48.6 9.3L407.8 93.6c5.6 0 .9-5.6-.9-6.5L362.9 55.4c-8.4-6.5-19.6-14-41.1-12.1L65.9 61.9c-9.3 .9-11.2 5.6-7.5 9.3l36.4 28.9zm15.9 61.6l0 278.1c0 14.9 7.5 20.5 24.3 19.6l290.5-16.8c16.8-.9 18.7-11.2 18.7-23.3l0-276.2c0-12.1-4.7-18.7-15-17.7L125.7 143.1c-11.2 .9-14.9 6.5-14.9 18.7zm286.7 14.9c1.9 8.4 0 16.8-8.4 17.8l-14 2.8 0 205.3c-12.2 6.5-23.4 10.3-32.7 10.3-15 0-18.7-4.7-29.9-18.7l-91.5-143.7 0 139 29 6.5s0 16.8-23.4 16.8l-64.4 3.7c-1.9-3.7 0-13.1 6.5-14.9l16.8-4.7 0-183.8-23.3-1.9c-1.9-8.4 2.8-20.5 15.9-21.5l69.1-4.7 95.3 145.6 0-128.8-24.3-2.8c-1.9-10.3 5.6-17.7 14.9-18.7l64.5-3.8zM44.4 36.7L310.6 17.1c32.7-2.8 41.1-.9 61.6 14l85 59.7c14 10.3 18.7 13.1 18.7 24.3l0 327.6c0 20.5-7.5 32.7-33.6 34.5L133.2 495.8c-19.6 .9-29-1.9-39.2-14.9L31.4 399.7c-11.2-14.9-15.9-26.1-15.9-39.2l0-291.2c0-16.8 7.5-30.8 28.9-32.7z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
