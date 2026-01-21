@@ -1,0 +1,162 @@
+:root {
+  --color-primary: hsl(210, 40%, 98%);
+  --color-secondary: hsl(210, 20%, 18%);
+  --color-tertiary: hsl(210, 15%, 45%);
+  --color-accent: hsl(210, 90%, 55%); 
+  --color-accent2: hsl(210, 25%, 30%);
+  --font-primary: "Comfortaa", sans-serif;
+}
+
+/* For possible theme toggle in the future */
+.dark {
+  --color-primary: hsl(210, 25%, 10%);
+  --color-secondary: hsl(210, 30%, 92%);
+  --color-tertiary: hsl(210, 15%, 60%);
+  --color-accent: hsl(210, 85%, 65%);
+  --color-accent2: hsl(210, 20%, 35%);
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-color: var(--color-primary);
+  font-family: var(--font-primary);
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.card {
+  height: 22rem;
+  border: 0.1rem solid var(--color-secondary);
+  border-radius: 0.5rem;
+  padding: 1.5rem 1.5rem;
+  max-width: 18.75rem;
+  width: 100%;
+  background-color: var(--color-secondary);
+  box-shadow: 0 0 15px var(--color-secondary);
+}
+
+#title {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--font-primary);
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+}
+
+label {
+  color: var(--color-tertiary);
+}
+
+#datebox {
+  gap: 0.5rem;
+  font-family: var(--font-primary);
+  width: 100%;
+}
+
+#birthdate {
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  font-family: var(--font-primary);
+  background-color: var(--color-primary);
+  border-color: var(--color-secondary);
+}
+
+
+button {
+  height: 2.5rem;
+}
+
+#buttons {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#calculatebtn {
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  font-family: var(--font-primary);
+  background-color: var(--color-accent);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+#resetbtn {
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  font-family: var(--font-primary);
+  background-color: var(--color-tertiary);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+#textbox {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0;
+  white-space: normal;
+  color: var(--color-primary);
+}
+
+#result .age-number {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+#pre-result{
+  margin-top: 1.4rem;
+}
+
+#error {
+  margin-top: 1.4rem;
+}
+
+/* Tablets and up */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #pre-result {
+    font-size: 1.2rem;
+  }
+
+  #result{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .card {
+    height: 25rem;
+    padding: 2rem 1rem;
+    max-width: 20rem;
+    width: 100%;
+  }
+}
+
