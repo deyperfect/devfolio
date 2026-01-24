@@ -178,18 +178,34 @@ body {
     background-color: var(--color-accent);
     border: none;
     color: var(--color-primary);
-    padding: 15px 40px;
-    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
     border-radius: 50px;
     transition: all 0.3s ease;
     animation: fadeInUp 1s ease 0.4s backwards;
 }
 
-.btn-cta:hover {
+#landing-button a:first-child:hover {
     background-color: var(--color-tertiary);
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#landing-button a:last-child:hover {
+    background-color: var(--color-accent);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#landing-button {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#landing-button a:last-child {
+    background-color: var(--color-tertiary);
 }
 
 @keyframes fadeInUp {
@@ -202,7 +218,7 @@ body {
         transform: translateY(0);
     }
 }
-/* Landing Section Start */
+/* Landing Section End */
 
 /* Projects Section Start */
 .section-title {
