@@ -87,6 +87,13 @@ body {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
+    transition: bottom 1s ease;
+}
+
+.visible #theme-toggle {
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
 }
 
 #theme-toggle svg {
