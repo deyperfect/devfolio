@@ -1,8 +1,5 @@
 /* * {
-    padding: 0 !important;
-    margin: 0 !important;
-    box-sizing: border-box;
-    outline: 1px solid white;
+    outline: 1px solid blue;
 } */
 
 :root {
@@ -365,7 +362,7 @@ tools-container {
 }
 
 .tool-card:hover {
-    transform: translateY(-10px) scale(1.05);
+    transform: scale(1.1);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12), 0 0 0 1px var(--color-accent);
     border-color: var(--color-accent);
     background: var(--color-primary);
@@ -476,6 +473,7 @@ tools-container {
     color: var(--color-secondary);
     margin: 0;
     width: 1.6rem;
+    
 }
 
 .footer .container {
@@ -583,6 +581,10 @@ tools-container {
     }
 
     /* Project Description */
+    #upcoming-projects .container {
+        max-width: 1000px;
+    }
+
     .project-description {
         font-size: 0.9rem;
     }
