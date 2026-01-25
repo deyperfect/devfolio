@@ -39,7 +39,7 @@ sendEmail.addEventListener('click', async (e) => {
         email: userEmail, 
         message: userMessage
     };
-    const formUrl = 'https://deyperfect.github.io/devfolio/contact';
+    const formUrl = '/api/contact';
 
     try {
         const response = await fetch(formUrl, {
