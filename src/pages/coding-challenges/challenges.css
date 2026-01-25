@@ -71,7 +71,7 @@ body {
     border-color: var(--color-secondary);
 }
 
-.navbar-toggler-icon {
+.dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 /* Navbar End */
@@ -160,6 +160,36 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Theme Toggler */
+#theme-toggle {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+#theme-toggle svg {
+    fill: var(--color-primary);
+}
+
+#theme-toggle svg:last-child {
+    display: none;
+}
+
+.dark #theme-toggle svg:first-child {
+    display: none;
+}
+
+.dark #theme-toggle svg:last-child {
+    display: block;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -170,7 +200,7 @@ body {
         transform: translateY(0);
     }
 }
-/* Landing Section Start */
+/* Landing Section End */
 
 /* Projects Section Start */
 .section-title {
@@ -237,6 +267,33 @@ body {
     .project-title {
         color: var(--color-accent);
 }
+}
+
+#tags {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+}
+
+#tags p {
+    padding: 0.1rem 0.4em;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+#html {
+    background-color: #FC490C;
+    color: white;
+}
+
+#css {
+    background-color: #2196F3;
+    color: white;
+}
+
+#js {
+    background-color: #FFDF00;
+    color: black;
 }
 
 .project-content {
