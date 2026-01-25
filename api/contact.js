@@ -1,13 +1,5 @@
-const express = require('express');
-const app = express();
-const port = 4000;
 const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser');
-const cors = require('cors');
 require('dotenv').config();
-
-app.use(cors());
-app.use(bodyParser.json());
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -17,9 +9,16 @@ const transporter = nodemailer.createTransport({
     }
 });
 
+module.exports = (req, res) => {
+    // Handle CORS
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    
+    if (req.method === 'OPTIONS') {
+        return res.status(200).end();
+    }
 
-
-app.post('/api/contact', (req, res) => {
     const {name, email, message} = req.body;
 
     const adminEmail = `
@@ -48,8 +47,4 @@ app.post('/api/contact', (req, res) => {
     res.status(200).json({ success: true, message: `Email sent!`});
 
     });
-});
-
-app.listen(port, () => {
-  console.log(`App listening at http://localhost:${port}`);
-});
+};
