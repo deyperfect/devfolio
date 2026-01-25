@@ -374,6 +374,12 @@ tools-container {
         color: var(--color-accent);
     }
 }
+
+#tools .container {
+        max-width: 350px;
+    }
+
+
 /* Tools Section End */
 
 /* Contact Section Start */
@@ -541,6 +547,10 @@ tools-container {
     .tool-name {
         font-size: 1rem;
     }
+
+    #tools .container {
+        max-width: 500px;
+    }
 }
 
 
@@ -587,6 +597,10 @@ tools-container {
         position: fixed;
         bottom: 1rem;
         right: 1rem;
+    }
+
+    #tools .container {
+        max-width: 800px;
     }
     
 }
