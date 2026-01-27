@@ -81,3 +81,8 @@ sendEmail.addEventListener('click', async (e) => {
         alert(`An error occurred: ${error.message}`);
     }
 });
+
+
+function openProject() {
+    window.open("https://github.com/deyperfect/CS50x-2025-Portfolio", "_blank");
+}
