@@ -1,6 +1,6 @@
-/* * {
+* {
     outline: 1px solid blue;
-} */
+}
 /* poppins-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -453,7 +453,7 @@ body {
 
 .tool-card::before {
   content: "";
-  position: absolute;
+  position: relative;
   inset: 0;
 }
 

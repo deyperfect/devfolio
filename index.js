@@ -83,6 +83,6 @@ sendEmail.addEventListener('click', async (e) => {
 });
 
 
-function openProject() {
-    window.open("https://github.com/deyperfect/CS50x-2025-Portfolio", "_blank");
+function openProject(url) {
+    window.open(url, "_blank");
 }
