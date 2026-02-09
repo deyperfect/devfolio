@@ -141,6 +141,7 @@ For any inquiries, please use the contact form on the website or reach out via:
 - LinkedIn: [@deyperfect](https://github.com/deyperfect)
 - GitHub: [edrylpalinis](https://www.linkedin.com/in/edrylpalinis/)
 
-- Edryl P
-  
+_Edryl P_
+
+---
 *Last updated: February 2026*
