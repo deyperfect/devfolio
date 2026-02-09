@@ -134,17 +134,13 @@ Bootstrap 5 grid system handles responsiveness automatically.
 - Minified CSS (`index.min.css`)
 - WebP image format for better compression
 
-## Author
-
-**Edryl Palinis**
-- GitHub: [@deyperfect](https://github.com/deyperfect)
-- LinkedIn: [edrylpalinis](https://www.linkedin.com/in/edrylpalinis/)
-
 ## Contact
 
 For any inquiries, please use the contact form on the website or reach out via:
 - Email: edrylpalinis@gmail.com
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [Your GitHub Profile]
+- LinkedIn: [@deyperfect](https://github.com/deyperfect)
+- GitHub: [edrylpalinis](https://www.linkedin.com/in/edrylpalinis/)
 
+- Edryl P
+  
 *Last updated: February 2026*
