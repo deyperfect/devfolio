@@ -15,7 +15,7 @@ A clean, modern, and responsive portfolio website showcasing my web development 
 
 ## Live Demo
 
-[View Live Site](#https://edrylp.vercel.app/) <!-- Add your deployed URL here -->
+[View Live Site](https://edrylp.vercel.app/) <!-- Add your deployed URL here -->
 
 ## Built With
 
