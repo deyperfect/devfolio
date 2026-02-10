@@ -41,6 +41,16 @@ if (rect.top < windowHeight) {
 
 // Contact Form
 const sendEmail = document.querySelector('#sendemail');
+const form = document.querySelector('#contactForm');
+const notyf = new Notyf({
+    duration: 3000,
+    ripple: true,
+    position: { x: 'right', y: 'bottom' },
+    types: [
+        { type: 'success', background: '#22c55e', icon: false },
+        { type: 'error', background: '#ef4444', icon: false }
+    ]
+});
 
 sendEmail.addEventListener('click', async (e) => {
     e.preventDefault();
@@ -68,17 +78,15 @@ sendEmail.addEventListener('click', async (e) => {
         });
 
         if (response.ok) {
-            alert('Email Sent Successfully');
+            notyf.success('✅ Message sent successfully!');
+            form.reset();
 
-            nameInput.value = '';
-            emailInput.value = '';
-            messageInput.value = '';
         } else {
             const error = await response.json();
-            alert(`Failed to send the message: ${error.message || 'Unknown error'}`);
+            notyf.error(`❌ ${error.message || 'Failed to send message.'}`);
         }
     } catch (error) {
-        alert(`An error occurred: ${error.message}`);
+        notyf.error('❌ Something went wrong. Please try again.');
     }
 });
 
@@ -86,3 +94,6 @@ sendEmail.addEventListener('click', async (e) => {
 function openProject(url) {
     window.open(url, "_blank");
 }
+
+
+
