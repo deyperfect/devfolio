@@ -55,6 +55,11 @@ const notyf = new Notyf({
 sendEmail.addEventListener('click', async (e) => {
     e.preventDefault();
 
+    if (!form.checkValidity()) {
+        notyf.error('❌ Please fill in all required fields correctly.');
+        return; 
+    }
+
     const nameInput = document.querySelector('#name');
     const emailInput = document.querySelector('#email');
     const messageInput = document.querySelector('#message');
