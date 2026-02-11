@@ -58,16 +58,17 @@ devfolio/
 │   ├── cs50.webp           # Project thumbnails
 │   ├── puzzle.webp
 │   ├── coursebooking.webp
-│   ├── html.png            # Tech stack logos
-│   ├── css.png
-│   ├── js.png
-│   ├── bootstrap.png
-│   ├── nodejs.webp
+│   ├── calculator.webp
+│   ├── html.webp            # Tech stack logos
+│   ├── css.webp
+│   ├── js.webp
+│   ├── vue.webp
 │   ├── mongodb.webp
-│   ├── postman.png
-│   ├── git.png
-│   ├── dark.png            # Theme icons
-│   └── light.png
+│   ├── expressjs.webp
+│   ├── nodejs.webp
+│   ├── bootstrap.webp
+│   ├── dark.webp            # Theme icons
+│   └── light.webp
 │
 └── src/
     └── pages/
