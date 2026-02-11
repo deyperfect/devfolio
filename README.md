@@ -64,7 +64,7 @@ devfolio/
 │   ├── js.webp
 │   ├── vue.webp
 │   ├── mongodb.webp
-│   ├── expressjs.webp
+│   ├── express.webp
 │   ├── nodejs.webp
 │   ├── bootstrap.webp
 │   ├── dark.webp            # Theme icons
