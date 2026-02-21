@@ -52,8 +52,6 @@
 
 <script setup>
 
-import { useDarkMode } from '../composables/theme.js'
-const { isDark, toggleTheme } = useDarkMode()
 
 const challenges = [
   {

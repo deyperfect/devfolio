@@ -3,6 +3,7 @@
   <Landing />
   <Projects />
   <Tools />
+  <Contact />
 
 </template>
 
@@ -10,8 +11,7 @@
 import Landing from '../components/Landing.vue'
 import Projects from '../components/Projects.vue'
 import Tools from '../components/Tools.vue'
-import { useDarkMode } from '../composables/theme.js'
+import Contact from '@/components/Contact.vue'
 
-const { isDark, toggleTheme } = useDarkMode()
 
 </script>
