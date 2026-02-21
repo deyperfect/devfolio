@@ -121,3 +121,146 @@
         </div>
     </section>
 </template>
+
+<style scoped>
+/* Projects Section */
+.projects-section {
+    background-color: var(--color-primary);
+    padding: 80px 0;
+}
+
+.project-card {
+    background-color: var(--color-primary);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-accent2);
+    position: relative;
+}
+
+
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: var(--color-accent);
+}
+
+
+
+
+.project-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+
+
+.image-wrapper {
+    position: relative;
+    width: calc(100% - 3rem);
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.image-wrapper:hover .project-image {
+    filter: brightness(0.4);
+    transform: scale(1.02);
+}
+
+.image-wrapper:hover .project-overlay {
+    opacity: 1;
+}
+.view-btn {
+    pointer-events: auto;
+    cursor: pointer;
+    padding: 0.6rem 1.4rem;
+    border-radius: 50px;
+    border: none;
+    background: var(--color-accent);
+    color: white;
+    font-weight: 600;
+}
+.view-btn:hover {
+    box-shadow: 0 0 15px var(--color-accent);
+    transform: scale(1.05);
+}
+
+.project-title:hover {
+        color: var(--color-accent);
+}
+
+.project-content {
+    padding: 0 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    margin-bottom: 0.75rem;
+}
+
+
+.project-description {
+    color: var(--color-tertiary);
+    opacity: 0.8;
+    font-size: 0.8rem;
+    flex-grow: 1;
+    text-align: justify;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    z-index: 1;
+}
+
+/* For Medium/Tablets */
+@media (min-width: 768px) {
+    .projects-section {
+        padding: 60px 0;
+    }
+}
+
+/* For desktop */
+@media (min-width: 992px) {
+    #upcoming-projects .container {
+        max-width: 1000px;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+    }
+
+    #completed-projects {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 1.2rem !important;
+    }
+}
+</style>

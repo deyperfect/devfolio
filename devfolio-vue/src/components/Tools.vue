@@ -62,3 +62,94 @@
         </div>
     </section>
 </template>
+
+<style scoped>
+/* Tools Section Start */
+.tools-section {
+    background-color: var(--color-primary);
+    padding: 80px 0;
+}
+
+.tools-container {
+    padding: 1rem;
+}
+
+.tool-card {
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tool-card img {
+    width: 80px;        
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.tool-card::before {
+  content: "";
+  position: relative;
+  inset: 0;
+}
+
+.tool-card:hover::before {
+    opacity: 0.05;
+}
+
+.tool-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-tertiary);
+    margin: 0;
+}
+
+.tool-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12), 0 0 0 1px var(--color-accent);
+    border-color: var(--color-accent);
+    background: var(--color-primary);
+}
+
+.tool-card:hover .tool-name {
+    color: var(--color-accent);
+}
+
+#tools .container {
+        max-width: 350px;
+    }
+
+
+/* For Medium/Tablets */
+@media (min-width: 768px) {
+    .tools-section {
+        padding: 60px 0;
+    }
+   
+    .tool-card {
+        min-height: 100px;
+        padding: 1.5rem;
+    }
+    
+    .tool-name {
+        font-size: 1rem;
+    }
+
+    #tools .container {
+        max-width: 500px;
+    }
+}
+
+/* For desktop */
+@media (min-width: 992px) {
+    #tools .container {
+        max-width: 800px;
+    }
+}
+</style>
