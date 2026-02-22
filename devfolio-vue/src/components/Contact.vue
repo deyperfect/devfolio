@@ -214,6 +214,7 @@ const sendEmail = async (e) => {
 @media (min-width: 768px) {
   .contact-section {
     padding: 150px 0;
+    flex: 1;
   }
 }
 </style>
