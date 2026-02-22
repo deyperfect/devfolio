@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">&copy; 2026 EP Developer Portfolio.</p> 
+            <p class="footer-text">&copy; 2026 Edryl P Developer Portfolio</p> 
             <div class="icon-holder">
                 <!-- GitHub -->
                 <a href="https://github.com/deyperfect" target="_blank" aria-label="GitHub Profile">
