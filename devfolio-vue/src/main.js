@@ -9,11 +9,13 @@ import './assets/index.css'
 // Pages
 import HomePage from './pages/HomePage.vue'
 import CodingChallengesPage from './pages/CodingChallengesPage.vue';
+import ContactPage from './pages/ContactPage.vue';
 
 // Routes
 const routes = [
   { path: "/", name: "Home", component: HomePage },
-  { path: '/coding-challenges', name: 'Coding Challenges', component: CodingChallengesPage }
+  { path: '/coding-challenges', name: 'Coding Challenges', component: CodingChallengesPage },
+  { path: '/contact', name: 'Contact', component: ContactPage }
 ];
 
 
