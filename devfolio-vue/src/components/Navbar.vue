@@ -10,7 +10,7 @@
                 <div class="collapse navbar-collapse text-center" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <RouterLink class="nav-link" to="/">Home</RouterLink>
+                            <RouterLink class="nav-link" :to="{ name: 'Home' }">Home</RouterLink>
                         </li>
                         <li class="nav-item">
                             <RouterLink class="nav-link" to="/#projects">Projects</RouterLink>
@@ -19,7 +19,7 @@
                             <RouterLink class="nav-link" to="/#tools">Tech Stack</RouterLink>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <RouterLink class="nav-link" :to="{ name: 'Contact' }">Contact</RouterLink>
                         </li>
                     </ul>
                 </div>

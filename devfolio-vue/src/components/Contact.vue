@@ -134,7 +134,7 @@ const sendEmail = async (e) => {
 <style scoped>
 .contact-section {
   background-color: var(--color-primary);
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 .contact-form {
@@ -213,7 +213,7 @@ const sendEmail = async (e) => {
 /* For Medium/Tablets */
 @media (min-width: 768px) {
   .contact-section {
-    padding: 60px 0;
+    padding: 150px 0;
   }
 }
 </style>

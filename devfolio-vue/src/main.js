@@ -22,6 +22,16 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+        top: 80 // offset for fixed navbar
+      }
+    }
+    return { top: 0 }
+  }
 });
 
 const app = createApp(App);
