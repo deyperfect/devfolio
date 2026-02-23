@@ -1,148 +1,38 @@
-# Portfolio Website
+# devfolio-vue
 
-A clean, modern, and responsive portfolio website showcasing my web development projects and skills.
+This template should help get you started developing with Vue 3 in Vite.
 
-## Features
+## Recommended IDE Setup
 
-- **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
-- **Dark/Light Mode** - Toggle between themes with localStorage persistence
-- **Project Showcase** - Highlighting key projects with descriptions and links
-- **Tech Stack Display** - Visual representation of technologies and tools
-- **Contact Form** - Integrated form with backend API for email submissionss
-- **Bootstrap 5** - Modern, mobile-first design framework
-- **Custom Fonts** - Self-hosted Poppins, Inconsolata, and Figtree fonts
-- **Optimized Performance** - Lazy loading images and minified CSS
+[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Live Demo
+## Recommended Browser Setup
 
-View Live Site: [https://edrylp.vercel.app/](https://edrylp.vercel.app/)
+- Chromium-based browsers (Chrome, Edge, Brave, etc.):
+  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
+- Firefox:
+  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
 
-## Built With
+## Customize configuration
 
-### Frontend
-- **HTML5** - Semantic markup
-- **CSS3** - Custom styling with CSS variables for theming
-- **JavaScript (ES6)** - Vanilla JavaScript for interactivity
-- **Bootstrap 5.3.8** - Responsive grid and components
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-### Backend
-- **Node.js** - JavaScript runtime
-- **Express.js** - Web application framework
-- **Nodemailer** - Email sending functionality
-- **CORS** - Cross-origin resource sharing
-- **dotenv** - Environment variable management
+## Project Setup
 
-## Project Structure
-
-```
-devfolio/
-├── index.html              # Main HTML file
-├── index.css               # Source CSS file
-├── index.min.css           # Minified CSS (production)
-├── index.js                # JavaScript functionality
-├── package.json            # Node.js dependencies
-│
-├── api/
-│   └── contact.js          # Contact form API endpoint
-│
-├── fonts/
-│   ├── poppins-v24-latin-regular.woff2
-│   ├── poppins-v24-latin-500.woff2
-│   ├── poppins-v24-latin-600.woff2
-│   ├── poppins-v24-latin-700.woff2
-│   ├── inconsolata-v37-latin-regular.woff2
-│   └── figtree-v9-latin-regular.woff2
-│
-├── images/
-│   ├── photo.webp          # Profile photo
-│   ├── cs50.webp           # Project thumbnails
-│   ├── puzzle.webp
-│   ├── coursebooking.webp
-│   ├── calculator.webp
-│   ├── html.webp            # Tech stack logos
-│   ├── css.webp
-│   ├── js.webp
-│   ├── vue.webp
-│   ├── mongodb.webp
-│   ├── express.webp
-│   ├── nodejs.webp
-│   ├── bootstrap.webp
-│   ├── dark.webp            # Theme icons
-│   └── light.webp
-│
-└── src/
-    └── pages/
-        └── coding-challenges/
-            ├── challenges.html
-            ├── challenges.css
-            └── challenges.js
+```sh
+npm install
 ```
 
-## Sections
+### Compile and Hot-Reload for Development
 
-### 1. **Landing/Hero**
-- Profile photo
-- Introduction and professional tagline
-- Call-to-action buttons (View Work, View Resume)
+```sh
+npm run dev
+```
 
-### 2. **My Projects**
-- CS50X 2025 Portfolio
-- Coding Challenges Collection
-- Course Booking API Documentation
+### Compile and Minify for Production
 
-### 3. **Tech Stack**
-- HTML5, CSS3, JavaScript
-- Bootstrap, Node.js
-- MongoDB, Postman, Git
-
-### 4. **Contact**
-- Contact form with validation
-- Email integration via backend API
-
-### 5. **Footer**
-- Social media links (GitHub, LinkedIn)
-
-## 📱 Responsive Breakpoints
-
-- **Mobile**: < 576px
-- **Tablet**: 576px - 992px
-- **Desktop**: > 992px
-
-Bootstrap 5 grid system handles responsiveness automatically.
-
-## Key Features Explained
-
-### Dark Mode Toggle
-- Uses localStorage to persist user preference
-- Toggles `.dark` class on body element
-- CSS variables handle color switching
-- Icon changes based on current theme
-
-### Contact Form
-- Client-side validation
-- Async fetch API for form submission
-- Success/error alerts
-- Form reset on successful submission
-- Backend API endpoint: `/api/contact`
-
-### Smooth Scroll
-- CSS `scroll-behavior: smooth` for anchor links
-- Hash-based navigation (#landing, #projects, #tools, #contact)
-
-### Performance Optimizations
-- Self-hosted fonts (no external requests)
-- Image lazy loading with `loading="lazy"`
-- Minified CSS (`index.min.css`)
-- WebP image format for better compression
-
-## Contact
-
-For any inquiries, please use the contact form on the website or reach out via:
-- Email: edrylpalinis@gmail.com
-- LinkedIn: [@deyperfect](https://github.com/deyperfect)
-- GitHub: [edrylpalinis](https://www.linkedin.com/in/edrylpalinis/)
-
-_Edryl P_
-
----
-*Last updated: February 2026*
+```sh
+npm run build
+```

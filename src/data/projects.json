@@ -1,0 +1,38 @@
+[
+    {  
+        "id": 1,
+        "title": "CS50X 2025 Portfolio",
+        "description": "A curated collection of problem sets and coding projects from Harvard's CS50 2025. This compilation demonstrates foundational programming skills, including C, Python, SQL, and web development with HTML, CSS, and JavaScript course.",
+        "image": "/images/cs50.webp",
+        "alt": "CS50X 2025 Portfolio Thumbnail",
+        "link": "https://github.com/deyperfect/CS50x-2025-Portfolio",
+        "external": true
+    },
+    {
+        "id": 2,
+        "title": "Coding Challenges",
+        "description": "A collection of projects focused on converting designs into responsive, accessible, and performant web interfaces. These challenges from Frontend Mentor and roadmap.sh test my proficiency in semantic HTML, modern CSS, and JavaScript.",
+        "image": "/images/puzzle.webp",
+        "alt": "Coding Challenges Thumbnail",
+        "link": "/coding-challenges",
+        "external": false
+    },
+    {
+        "id": 3,
+        "title": "Course Booking API Documentation",
+        "description": "RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.",
+        "image": "/images/coursebooking.webp",
+        "alt": "Course Booking API Documentation Thumbnail",
+        "link": "https://github.com/deyperfect/Online-Course-Booking-API",
+        "external": true
+    },
+    {
+        "id": 4,
+        "title": "Course Booking Application",
+        "description": "RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.",
+        "image": "/images/coursebooking.webp",
+        "alt": "Course Booking Application Thumbnail",
+        "link": "https://github.com/deyperfect/Online-Course-Booking-API",
+        "external": true
+    }
+]

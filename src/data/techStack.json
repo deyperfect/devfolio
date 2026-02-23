@@ -1,0 +1,63 @@
+[
+    {  
+        "id": 1,
+        "name": "HTML",
+        "image": "/images/html.webp",
+        "alt": "HTML Logo"
+    },
+    {  
+        "id": 2,
+        "name": "CSS",
+        "image": "/images/css.webp",
+        "alt": "CSS Logo"
+    },
+    {  
+        "id": 3,
+        "name": "JavaScript",
+        "image": "/images/javascript.webp",
+        "alt": "JavaScript Logo"
+    },
+    {
+        "id": 4,
+        "name": "Vue.js",
+        "image": "/images/vue.webp",
+        "alt": "Vue.js Logo"
+    },
+    {
+        "id": 5,
+        "name": "MongoDB",
+        "image": "/images/mongodb.webp",
+        "alt": "MongoDB Logo"
+    },
+    {
+        "id": 6,
+        "name": "Express.js",
+        "image": "/images/express.webp",
+        "alt": "Express.js Logo"
+    },
+    {
+        "id": 7,
+        "name": "React",
+        "image": "/images/react.webp",
+        "alt": "React Logo"
+    },
+    {
+        "id": 8,
+        "name": "Node.js",
+        "image": "/images/nodejs.webp",
+        "alt": "Node.js Logo"
+    },
+    {
+        "id": 9,
+        "name": "Bootstrap",
+        "image": "/images/bootstrap.webp",
+        "alt": "Bootstrap Logo"
+    },
+    {
+        "id": 10,
+        "name": "Git",
+        "image": "/images/git.webp",
+        "alt": "Git Logo"
+    }
+
+]
