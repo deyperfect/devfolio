@@ -19,7 +19,7 @@
     },
     {
         "id": 3,
-        "title": "Course Booking API Documentation",
+        "title": "Course Booking API",
         "description": "RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.",
         "image": "/images/coursebooking.webp",
         "alt": "Course Booking API Documentation Thumbnail",
@@ -28,11 +28,38 @@
     },
     {
         "id": 4,
-        "title": "Course Booking Application",
-        "description": "RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.",
-        "image": "/images/coursebooking.webp",
-        "alt": "Course Booking Application Thumbnail",
-        "link": "https://github.com/deyperfect/Online-Course-Booking-API",
+        "title": "Blogpost API",
+        "description": "A RESTful blogging API built with Node.js, Express, and MongoDB that supports user authentication, post creation, and comment management. Security features include JWT authentication and password hashing with bcrypt.",
+        "image": "/images/blogpost.webp",
+        "alt": "Blogpost API Thumbnail",
+        "link": "https://github.com/deyperfect/blogpostAPI",
+        "external": true
+    },
+    {
+        "id": 5,
+        "title": "Lapis",
+        "description": "A full-stack blog application built with Vue 3 (Composition API) and a Node.js/Express backend. Users can register, authenticate, and create or manage posts through a responsive interface powered by Pinia state management and MongoDB.",
+        "image": "/images/lapis.webp",
+        "alt": "Lapis Blog Application Thumbnail",
+        "link": "https://github.com/deyperfect/lapis",
+        "external": true
+    },
+    {
+        "id": 6,
+        "title": "Allure",
+        "description": "A full-stack e-commerce application built with Vue 3 that supports customer shopping and admin product management. Features JWT authentication, role-based access control, cart and checkout functionality, order history, and a dynamic single-page interface powered by Vue Router.",
+        "image": "/images/allure.webp",
+        "alt": "Allure E-commerce Application Thumbnail",
+        "link": "https://github.com/deyperfect/allure",
+        "external": true
+    },   
+    {
+        "id": 7,
+        "title": "Further",
+        "description": "A horror, mystery, and thriller movie collection app built with Vue that focuses on organizing dark-themed films. The application features a clean interface for browsing movies and viewing structured film data.",
+        "image": "/images/further.webp",
+        "alt": "Further Thumbnail",
+        "link": "https://github.com/deyperfect/further",
         "external": true
     }
 ]

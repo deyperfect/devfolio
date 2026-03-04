@@ -1,24 +1,39 @@
 <script setup>
-import { defineProps } from 'vue';
-defineProps({
-    project: {
-        type: Object,
-        required: true
-    }
-})
-</script>
+import { defineProps } from "vue"
+import { RouterLink } from "vue-router"
 
+defineProps({
+  challenge: {
+    type: Object,
+    required: true
+  }
+})
+
+const tagClass = (tag) => {
+  const t = tag.toLowerCase()
+
+  if (t === "javascript") return "tag-js"
+  if (t === "html") return "tag-html"
+  if (t === "css") return "tag-css"
+  if (t === "vue") return "tag-vue"
+  if (t === "react") return "tag-react"
+  if (t === "node") return "tag-node"
+  if (t === "mongodb") return "tag-mongo"
+
+  return "tag-default"
+}
+</script>
 
 <template>
     <div class="project-card">
 
         <div class="img-holder">
             <div class="image-wrapper">
-                <img :src="project.image" :alt="project.alt" class="project-image" loading="lazy" decoding="async" />
+                <img :src="challenge.image" :alt="challenge.alt" class="project-image" loading="lazy" decoding="async" />
                 <div class="project-overlay">
-                    <a v-if="project.external" class="view-btn" :href="project.link" target="_blank"
-                        :aria-label="`View ${project.title}`">View Project</a>
-                    <RouterLink v-else class="view-btn" :to="project.link" :aria-label="`View ${project.title}`">
+                    <a v-if="challenge.external" class="view-btn" :href="challenge.url" target="_blank"
+                        :aria-label="`View ${challenge.title}`">View Project</a>
+                    <RouterLink v-else class="view-btn" :to="challenge.url" :aria-label="`View ${challenge.title}`">
                         View Project
                     </RouterLink>
                 </div>
@@ -27,18 +42,27 @@ defineProps({
 
         <div class="project-content">
             <h3 class="project-title">
-                <a v-if="project.external" class="project-link" :href="project.link" target="_blank"
-                    :aria-label="`View ${project.title}`">{{ project.title }}</a>
-                <RouterLink v-else class="project-link" :to="project.link" :aria-label="`View ${project.title}`">
-                    {{ project.title }}
+                <a v-if="challenge.external" class="project-link" :href="challenge.url" target="_blank"
+                    :aria-label="`View ${challenge.title}`">{{ challenge.title }}</a>
+                <RouterLink v-else class="project-link" :to="challenge.url" :aria-label="`View ${challenge.title}`">
+                    {{ challenge.title }}
                 </RouterLink>
             </h3>
-            <p class="project-description">{{ project.description }}</p>
+            <div class="tags">
+                <span
+                    v-for="tag in challenge.tags"
+                    :key="tag"
+                    class="tag"
+                    :class="tagClass(tag)"
+                    >
+                    {{ tag }}
+                </span>
+            </div>
+            <p class="project-description">{{ challenge.description }}</p>
         </div>
 
     </div>
 </template>
-
 
 <style scoped>
 .project-card {
@@ -145,6 +169,60 @@ defineProps({
     color: inherit;
     position: relative;
     z-index: 1;
+}
+
+
+.tags {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 6px;
+  margin-bottom: 0.6rem;
+  overflow-x: auto;
+}
+
+
+.tag {
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+}
+
+
+.tag-js {
+  background: #f7df1e;
+  color: #000;
+}
+
+.tag-html {
+  background: #e34f26;
+}
+
+.tag-css {
+  background: #1572b6;
+}
+
+.tag-vue {
+  background: #42b883;
+}
+
+.tag-react {
+  background: #61dafb;
+  color: #000;
+}
+
+.tag-node {
+  background: #68a063;
+}
+
+.tag-mongo {
+  background: #4db33d;
+}
+
+.tag-default {
+  background: var(--color-accent2);
 }
 
 @media (min-width: 992px) {

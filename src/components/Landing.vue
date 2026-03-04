@@ -36,7 +36,7 @@
         <div class="mx-auto" id="landing-button">
           <a href="#projects" class="btn btn-cta">View My Work</a>
           <a
-            href="https://drive.google.com/file/d/1Tq3noSrq1Q2-R7v7OzefZLCNoREdVI_1/view?usp=sharing"
+            href="/resume.pdf"
             target="_blank"
             class="btn btn-cta"
             >View Resume</a

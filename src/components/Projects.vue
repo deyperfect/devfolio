@@ -1,3 +1,12 @@
+<script setup>
+// import ProjectCard component
+import ProjectCard from "./ProjectCard.vue";
+
+// import projects data
+import projects from "../data/projects.json";
+</script>
+
+
 <template>
   <section id="projects" class="projects-section">
     <div class="container">
@@ -15,13 +24,6 @@
   </section>
 </template>
 
-<script setup>
-// import ProjectCard component
-import ProjectCard from "./ProjectCard.vue";
-
-// import projects data
-import projects from "../data/projects.json";
-</script>
 
 <style scoped>
 .projects-section {
