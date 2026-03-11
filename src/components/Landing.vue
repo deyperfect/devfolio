@@ -16,7 +16,7 @@
           <p class="landing-intro">
             Hello World! My name is <strong>Edryl</strong>, and I'm a
           </p>
-          <h1 class="landing-title">Junior Full Stack Developer</h1>
+          <h1 class="landing-title">Full Stack Web Developer</h1>
 
           <p id="par1" class="landing-subtitle">
             I&apos;m a developer with a foundation in professional communication
