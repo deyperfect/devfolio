@@ -10,12 +10,15 @@ import projects from "../data/projects.json";
 <template>
   <section id="projects" class="projects-section">
     <div class="container">
-      <h2 class="section-title">My Projects</h2>
+      <div class="section-heading">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Some of my selected works</p>
+      </div>
       <div class="row g-4 justify-content-center" id="completed-projects">
         <div
           v-for="project in projects"
           :key="project.id"
-          class="col-10 col-md-6 col-lg-3"
+          class="col-12 col-md-6 col-lg-3"
         >
           <ProjectCard :project="project" />
         </div>
@@ -28,7 +31,7 @@ import projects from "../data/projects.json";
 <style scoped>
 .projects-section {
   background-color: var(--color-primary);
-  padding: 80px 0;
+  padding: 3rem 0;
 }
 
 @media (min-width: 768px) {
@@ -38,10 +41,8 @@ import projects from "../data/projects.json";
 }
 
 @media (min-width: 992px) {
-  /* #completed-projects {
-        display: flex !important;
-        justify-content: center !important;
-        gap: 1.2rem !important;
-    } */
+ .projects-section {
+    padding: 6rem 0;
+  }
 }
 </style>
