@@ -127,25 +127,43 @@ body {
 
 /* Sections Title */
 .section-title {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--color-secondary);
-    text-align: center;
-    margin-bottom: 3rem;
-    position: relative;
-    padding-bottom: 1rem;
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 0.4rem;
 }
 
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(90deg, var(--color-accent), var(--color-tertiary));
-    border-radius: 2px;
+.section-heading {
+  position: relative;
+  padding-left: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-heading::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--color-accent), var(--color-tertiary));
+  border-radius: 2px;
+}
+
+.section-heading .section-title {
+  padding-left: 0;
+  margin-bottom: 0.4rem;
+}
+
+.section-heading .section-title::before {
+  content: none;
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: var(--color-tertiary);
 }
 
 /* Theme Toggler */
@@ -253,4 +271,5 @@ body {
     .footer-text {
         font-size: 1.1rem;
     }
+
 }
