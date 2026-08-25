@@ -1,63 +1,93 @@
 <template>
   <section id="contact" class="contact-section">
     <div class="container mx-auto">
-      <h2 class="section-title">Contact</h2>
+      <div class="section-heading">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">I'd love to hear from you</p>
+      </div>
+ 
       <div class="row justify-content-center">
-        <div class="col-10 col-lg-6">
-          <form
-            id="contactForm"
-            ref="form"
-            @submit="sendEmail"
-            class="contact-form"
-            novalidate
-          >
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input
-                type="text"
-                v-model="name"
-                class="form-control"
-                id="name"
-                name="name"
-                required
-              />
-              <div class="invalid-feedback">Please provide your name.</div>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input
-                type="email"
-                v-model="email"
-                class="form-control"
-                id="email"
-                name="email"
-                required
-              />
-              <div class="invalid-feedback">
-                Please provide your email address.
+        <div class="col-12">
+          <div class="contact-panel">
+            <div class="contact-panel-left">
+              <div class="note-inner">
+
+                <div class="note-eyebrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square-quote-icon lucide-message-square-quote"><path d="M14 14a2 2 0 0 0 2-2V8h-2"/><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/><path d="M8 14a2 2 0 0 0 2-2V8H8"/></svg>
+                  <span>Feedback Loop</span>
+                </div>
+ 
+                <p class="contact-note">
+                  I genuinely love feedback, especially the kind that helps
+                  me get better. If something here didn't work the way you
+                  expected, felt off, or you just have thoughts to share,
+                  I'd really appreciate hearing them.
+                </p>
+                
               </div>
             </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea
-                v-model="message"
-                class="form-control"
-                id="message"
-                name="message"
-                rows="5"
-                required
-              ></textarea>
-              <div class="invalid-feedback">Please provide a message.</div>
+ 
+            <div class="contact-panel-right">
+              <form
+                id="contactForm"
+                ref="form"
+                @submit="sendEmail"
+                class="contact-form"
+                novalidate
+              >
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    v-model="name"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please provide your name.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    v-model="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please provide your email address.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    v-model="message"
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">
+                    Please provide a message.
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  id="sendemail"
+                  class="btn btn-primary btn-submit"
+                  :disabled="isFormEmpty || isLoading"
+                >
+                  {{ isLoading ? "Sending..." : "Send Message" }}
+                </button>
+              </form>
             </div>
-            <button
-              type="submit"
-              id="sendemail"
-              class="btn btn-primary btn-submit"
-              :disabled="isFormEmpty || isLoading"
-            >
-              {{ isLoading ? "Sending..." : "Send Message" }}
-            </button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -134,45 +164,104 @@ const sendEmail = async (e) => {
 <style scoped>
 .contact-section {
   background-color: var(--color-primary);
-  padding: 100px 0;
+  padding-top: 3rem;
 }
-
-.contact-form {
+ 
+.contact-panel {
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-primary);
-  padding: 2rem;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--color-tertiary);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+ 
+.contact-panel-left {
+  padding: 2rem;
+}
+ 
+.contact-panel-right {
+  padding: 2rem;
+  border-top: 1px solid var(--color-tertiary);
 }
 
+.note-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+ 
+.note-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: "Inconsolata";
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 1.25rem;
+}
+
+.note-eyebrow span {
+  font-size: 1.5rem;
+}
+ 
+.contact-note {
+  font-family: "Figtree";
+  font-size: 1rem;
+  color: var(--color-tertiary);
+  margin-bottom: 1.5rem;
+}
+ 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+ 
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: "Figtree";
+  font-size: 0.9rem;
+  color: var(--color-tertiary);
+}
+ 
+.info-item svg {
+  flex-shrink: 0;
+  color: var(--color-accent);
+}
+ 
 .form-label {
   font-weight: 600;
   color: var(--color-secondary);
   margin-bottom: 0.5rem;
 }
-
+ 
 .form-control {
   background-color: var(--color-primary);
-  border: 2px solid rgba(0, 0, 0, 0.1);
   color: var(--color-secondary);
   padding: 0.75rem 1rem;
   border-radius: 8px;
-  transition: all 0.3s ease;
   border: 1px solid var(--color-tertiary);
+  transition: all 0.3s ease;
 }
-
+ 
 .form-control:focus {
   background-color: var(--color-primary);
   border-color: var(--color-accent);
   color: var(--color-secondary);
   box-shadow: 0 0 0 0.2rem rgba(162, 80, 80, 0.25);
 }
-
+ 
 .form-control::placeholder {
   color: var(--color-secondary);
   opacity: 0.5;
 }
-
+ 
 .btn-submit {
   background-color: var(--color-accent);
   border: none;
@@ -183,38 +272,65 @@ const sendEmail = async (e) => {
   transition: all 0.3s ease;
   width: 100%;
 }
-
+ 
 .btn-submit:hover {
   background-color: var(--color-tertiary);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-
+ 
 .invalid-feedback {
   display: block;
   color: var(--color-tertiary);
 }
-
+ 
 .was-validated .form-control:invalid {
   border-color: #dc3545;
 }
-
+ 
 .was-validated .form-control:valid {
   border-color: #28a745;
 }
-
+ 
 /* For Small Screens */
 @media (min-width: 576px) {
-  .contact-form {
+  .contact-panel-left,
+  .contact-panel-right {
     padding: 1.5rem;
   }
 }
-
-/* For Medium/Tablets */
+ 
+/* For Medium/Tablets and up: two columns side by side */
 @media (min-width: 768px) {
   .contact-section {
-    padding: 150px 0;
-    flex: 1;
+    padding: 6rem 0;
+  }
+ 
+  .contact-panel {
+    flex-direction: row;
+    align-items: stretch;
+  }
+ 
+  .contact-panel-left {
+    width: 42%;
+    padding: 2.5rem;
+  }
+ 
+  .contact-panel-right {
+    width: 58%;
+    padding: 2.5rem;
+    border-top: none;
+    border-left: 1px solid var(--color-tertiary);
+    display: flex;
+    align-items: center;
+  }
+ 
+  .contact-panel-right .contact-form {
+    width: 100%;
+  }
+ 
+  .note-inner {
+    justify-content: center;
   }
 }
 </style>
