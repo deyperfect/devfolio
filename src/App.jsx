@@ -1,14 +1,16 @@
-import { useState } from "react";
-import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import "./index.css";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
-    <>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    </>
+    <div className="flex min-h-screen flex-col">
+      <main className="flex-1">
+        <Routes>
+          {/* routes */}
+        </Routes>
+      </main>
+    </div>
   );
-}
+};
 
 export default App;
