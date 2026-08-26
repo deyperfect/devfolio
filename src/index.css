@@ -1,1 +1,80 @@
 @import "tailwindcss";
+
+/* Poppins */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/poppins-v24-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/poppins-v24-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/poppins-v24-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/poppins-v24-latin-700.woff2') format('woff2');
+}
+
+/* Inconsolata */
+@font-face {
+  font-display: swap;
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/inconsolata-v37-latin-regular.woff2') format('woff2');
+}
+
+/* Figtree */
+@font-face {
+  font-display: swap;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/figtree-v9-latin-regular.woff2') format('woff2');
+}
+
+@theme {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-inconsolata: 'Inconsolata', monospace;
+  --font-figtree: 'Figtree', sans-serif;
+
+  --color-primary: var(--site-primary);
+  --color-secondary: var(--site-secondary);
+  --color-tertiary: var(--site-tertiary);
+  --color-accent: var(--site-accent);
+  --color-accent-2: var(--site-accent-2);
+}
+
+:root {
+  --site-primary: hsl(220, 20%, 97%);
+  --site-secondary: hsl(220, 15%, 15%);
+  --site-tertiary: hsl(220, 10%, 45%);
+  --site-accent: hsl(355.75, 69.4%, 56%);
+  --site-accent-2: hsl(0, 0%, 25.1%);
+}
+
+.dark {
+  --site-primary: hsl(222.86, 13.73%, 10%);
+  --site-secondary: hsl(222.86, 13.73%, 90%);
+  --site-tertiary: hsl(223.85, 12.15%, 58.04%);
+  --site-accent: hsl(355.75, 69.4%, 64.12%);
+  --site-accent-2: hsl(0, 0%, 25.1%);
+}
