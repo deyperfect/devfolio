@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import "./index.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage"
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
 
       <main className="flex-1">
         <Routes>
-          {/* routes */}
+         <Route path="/" element={<HomePage />} />
         </Routes>
       </main>
       
