@@ -1,4 +1,4 @@
-
+import Socials from "../components/Socials.jsx"
 
 const ProfileCard = () => {
   return (
@@ -34,6 +34,7 @@ const ProfileCard = () => {
           Bulacan, Philippines
         </p>
 
+        <Socials />
         
       </div>
     </div>
