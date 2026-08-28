@@ -1,5 +1,6 @@
 import TechStackCard from "./TechStackCard.jsx";
 import technologies from "../data/techStack.json";
+import SectionHeader from "./SectionHeader.jsx";
 
 const TechStack = () => {
   return (
@@ -7,8 +8,10 @@ const TechStack = () => {
     <section>
 
       <div >
-        <h2 >Tech Stack</h2>
-        <p >What I currently work with</p>
+        <SectionHeader
+         title="Skills & Technologies"
+         subtitle="What I currently work with"
+        />
       </div>
 
       <div className="grid gap-3 grid-cols-12 px-5 md:px-0 justify-center">
