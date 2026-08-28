@@ -1,0 +1,74 @@
+[
+    {  
+        "id": 1,
+        "name": "HTML",
+        "image": "/images/html.webp",
+        "alt": "HTML Logo"
+    },
+    {  
+        "id": 2,
+        "name": "CSS",
+        "image": "/images/css.webp",
+        "alt": "CSS Logo"
+    },
+    {  
+        "id": 3,
+        "name": "JavaScript",
+        "image": "/images/js.webp",
+        "alt": "JavaScript Logo"
+    },
+    {
+        "id": 4,
+        "name": "Vue.js",
+        "image": "/images/vue.webp",
+        "alt": "Vue.js Logo"
+    },
+    {
+        "id": 5,
+        "name": "React",
+        "image": "/images/react.webp",
+        "alt": "React Logo"
+    },
+    {
+        "id": 6,
+        "name": "MongoDB",
+        "image": "/images/mongodb.webp",
+        "alt": "MongoDB Logo"
+    },
+    {
+        "id": 7,
+        "name": "Express.js",
+        "image": "/images/express.webp",
+        "alt": "Express.js Logo"
+    },
+    {
+        "id": 8,
+        "name": "Node.js",
+        "image": "/images/nodejs.webp",
+        "alt": "Node.js Logo"
+    },
+    {
+        "id": 9,
+        "name": "Postman",
+        "image": "/images/postman.webp",
+        "alt": "Postman Logo"
+    },
+    {
+        "id": 10,
+        "name": "Bootstrap",
+        "image": "/images/bootstrap.webp",
+        "alt": "Bootstrap Logo"
+    },
+    {
+        "id": 11,
+        "name": "VSCode",
+        "image": "/images/vscode.webp",
+        "alt": "VSCode Logo"
+    },
+    {
+        "id": 12,
+        "name": "Figma",
+        "image": "/images/figma.webp",
+        "alt": "Figma Logo"
+    }
+]    
