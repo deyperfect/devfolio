@@ -84,6 +84,12 @@
     lg:text-[4rem]
   }
 
+  section {
+    @apply
+    container
+    mx-auto
+    xl:max-w-[1140px]
+  }
   
 }
 
