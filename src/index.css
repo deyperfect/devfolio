@@ -1,36 +1,44 @@
 @import "tailwindcss";
 
-/* Poppins */
+/* Plus Jakarta Sans */
 @font-face {
-  font-display: swap;
-  font-family: 'Poppins';
+  font-display: swap; 
+  font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/poppins-v24-latin-regular.woff2') format('woff2');
+  src: url('../fonts/plus-jakarta-sans-v12-latin-regular.woff2') format('woff2'); 
 }
 
 @font-face {
-  font-display: swap;
-  font-family: 'Poppins';
+  font-display: swap; 
+  font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 500;
-  src: url('/fonts/poppins-v24-latin-500.woff2') format('woff2');
+  src: url('../fonts/plus-jakarta-sans-v12-latin-500.woff2') format('woff2'); 
 }
 
 @font-face {
-  font-display: swap;
-  font-family: 'Poppins';
+  font-display: swap; 
+  font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 600;
-  src: url('/fonts/poppins-v24-latin-600.woff2') format('woff2');
+  src: url('../fonts/plus-jakarta-sans-v12-latin-600.woff2') format('woff2'); 
 }
 
 @font-face {
-  font-display: swap;
-  font-family: 'Poppins';
+  font-display: swap; 
+  font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/poppins-v24-latin-700.woff2') format('woff2');
+  src: url('../fonts/plus-jakarta-sans-v12-latin-700.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/plus-jakarta-sans-v12-latin-800.woff2') format('woff2'); 
 }
 
 /* Inconsolata */
@@ -52,7 +60,7 @@
 }
 
 @theme {
-  --font-poppins: 'Poppins', sans-serif;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
   --font-inconsolata: 'Inconsolata', monospace;
   --font-figtree: 'Figtree', sans-serif;
 
@@ -68,7 +76,7 @@
     @apply
     mb-5
     font-bold
-    font-poppins
+    font-jakarta
     text-accent
     animate-[fadeInUp_1s_ease]
     text-[1.5rem]

@@ -27,7 +27,7 @@ const ProfileCard = () => {
           />
         </div>
 
-        <p className="mb-1 text-2xl font-bold font-poppins text-secondary">
+        <p className="mb-1 text-2xl font-bold font-jakarta text-secondary">
           Edryl Palinis
         </p>
         <p className="mb-4 font-figtree text-[0.95rem] text-tertiary">
