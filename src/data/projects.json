@@ -7,6 +7,13 @@
         "alt": "Lapis Blog Application Thumbnail",
         "code": "https://github.com/deyperfect/lapis",
         "demo": "https://lapis-blush.vercel.app/",
+        "tech": [
+            "Vue",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Bootstrap"
+        ],
         "external": true
     },
     {
@@ -17,26 +24,29 @@
         "alt": "Further Thumbnail",
         "code": "https://github.com/deyperfect/further",
         "demo": "https://further-eight.vercel.app/",
+        "tech": [
+            "Vue",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Bootstrap"
+        ],
         "external": true
     },
     {
         "id": 3,
         "title": "Wanted Minds",
         "description": "A sleek, modern website for Wanted Minds, a fictional private detective agency operating in the heart of downtown Tokyo. This single-page React application showcases the agency's services, team members, and provides a contact interface.",
-        "image": "/images/puzzle.webp",
+        "image": "/images/wantedminds.webp",
         "alt": "Wanted Minds Thumbnail",
         "code": "https://github.com/deyperfect/Wanted-Minds",
         "demo": "https://wanted-minds.vercel.app/",
-        "external": true
-    },
-    {  
-        "id": 4,
-        "title": "CS50X 2025 Portfolio",
-        "description": "A curated collection of problem sets and coding projects from Harvard's CS50 2025. This compilation demonstrates foundational programming skills, including C, Python, SQL, and web development with HTML, CSS, and JavaScript course.",
-        "image": "/images/cs50.webp",
-        "alt": "CS50X 2025 Portfolio Thumbnail",
-        "code": "https://github.com/deyperfect/CS50x-2025-Portfolio",
+        "tech": [
+            "React",
+            "Bootstrap"
+        ],
         "external": true
     }
+    
     
 ]
