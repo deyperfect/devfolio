@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "title": "Lapis",
+        "description": "A full-stack blog application built with Vue 3 and a Node.js/Express backend. Users can register, authenticate, and create or manage posts through a responsive interface powered by Pinia state management and MongoDB.",
+        "image": "/images/lapis.webp",
+        "alt": "Lapis Blog Application Thumbnail",
+        "code": "https://github.com/deyperfect/lapis",
+        "demo": "https://lapis-blush.vercel.app/",
+        "tech": [
+            "Vue",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Bootstrap"
+        ],
+        "external": true
+    },
+    {
+        "id": 2,
+        "title": "Further",
+        "description": "A horror, mystery, and thriller movie collection app built with Vue that focuses on organizing dark-themed films. The application features a clean interface for browsing movies and viewing structured film data.",
+        "image": "/images/further.webp",
+        "alt": "Further Thumbnail",
+        "code": "https://github.com/deyperfect/further",
+        "demo": "https://further-eight.vercel.app/",
+        "tech": [
+            "Vue",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Bootstrap"
+        ],
+        "external": true
+    },
+    {
+        "id": 3,
+        "title": "Wanted Minds",
+        "description": "A sleek, modern website for Wanted Minds, a fictional private detective agency operating in the heart of downtown Tokyo. This single-page React application showcases the agency's services, team members, and provides a contact interface.",
+        "image": "/images/wantedminds.webp",
+        "alt": "Wanted Minds Thumbnail",
+        "code": "https://github.com/deyperfect/Wanted-Minds",
+        "demo": "https://wanted-minds.vercel.app/",
+        "tech": [
+            "React",
+            "Bootstrap"
+        ],
+        "external": true
+    }
+    
+    
+]
