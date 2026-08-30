@@ -86,7 +86,7 @@ const ContactForm = () => {
           type="text"
           id="name"
           name="name"
-          className="bg-primary border border-tertiary rounded-md p-3 font-figtree"
+          className="bg-primary border border-tertiary/30 rounded-md p-3 font-figtree"
           value={formData.name}
           onChange={handleChange}
           required
@@ -106,7 +106,7 @@ const ContactForm = () => {
           type="email"
           id="email"
           name="email"
-          className="bg-primary border border-tertiary rounded-md p-3 font-figtree"
+          className="bg-primary border border-tertiary/30 rounded-md p-3 font-figtree"
           value={formData.email}
           onChange={handleChange}
           required
@@ -125,7 +125,7 @@ const ContactForm = () => {
         <textarea
           id="message"
           name="message"
-          className="bg-primary border border-tertiary rounded-md p-3 font-figtree"
+          className="bg-primary border border-tertiary/30 rounded-md p-3 font-figtree"
           rows="5"
           value={formData.message}
           onChange={handleChange}
