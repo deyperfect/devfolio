@@ -75,11 +75,11 @@
   h1 {
     @apply
     mb-5
-    font-bold
+    font-extrabold
     font-jakarta
     text-accent
     animate-[fadeInUp_1s_ease]
-    text-[1.5rem]
+    text-[1.7rem]
     md:text-[2.5rem]
     lg:text-[4rem]
   }
