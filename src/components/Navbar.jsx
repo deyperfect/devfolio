@@ -18,7 +18,6 @@ const Navbar = () => {
             to="/"
             className="text-xl lg:text-[1.6rem] text-accent font-jakarta font-extrabold hidden lg:block"
             onClick={() => {
-              closeMenu();
               window.scrollTo({
                 top: 0,
                 behavior: "smooth",
@@ -28,6 +27,45 @@ const Navbar = () => {
             Edryl Palinis
           </Link>
 
+          {/* Desktop Navigation Links */}
+          <div className="hidden lg:block">
+            <ul className="flex items-center gap-4 font-semibold">
+              <li>
+                <Link
+                  to="/"
+                  className="nav-link"
+                  onClick={() => {
+                    window.scrollTo({
+                      top: 0,
+                      behavior: "smooth",
+                    });
+                  }}
+                >
+                  Home
+                </Link>
+              </li>
+
+              <li>
+                <a href="#tools" className="nav-link">
+                  Tech Stack
+                </a>
+              </li>
+
+              <li>
+                <a href="#projects" className="nav-link">
+                  Projects
+                </a>
+              </li>
+
+              <li>
+                <a href="#contact" className="nav-link">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Hamburger Icon for Mobile and Tablet */}
           <button
             type="button"
             className="lg:hidden fixed right-5 top-5 z-55 flex items-center justify-center text-secondary rounded-md p-2 shadow-[0_0_10px_rgba(0,0,0,0.2)]"
@@ -42,16 +80,20 @@ const Navbar = () => {
             )}
           </button>
 
+          {/* Backdrop */}
           {isOpen && (
             <div
-              className="fixed inset-0 z-40 bg-primary/50 backdrop-blur-xl shadow-2xl"
+              className="lg:hidden fixed inset-0 z-40 bg-primary/50 backdrop-blur-xl shadow-2xl"
               onClick={() => setIsOpen(false)}
             />
           )}
 
+          {/* Mobile/Tablet Sidebar */}
           <div
             className={`${
-              isOpen ? "translate-x-0 shadow-[-8px_0_15px_rgba(0,0,0,0.20)]" : "translate-x-full"
+              isOpen
+                ? "translate-x-0 shadow-[-8px_0_15px_rgba(0,0,0,0.20)]"
+                : "translate-x-full"
             } sidebar`}
           >
             <ul className="flex flex-col lg:items-center gap-4 px-1 lg:flex-row lg:p-0 font-semibold">
