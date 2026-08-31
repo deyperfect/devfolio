@@ -9,7 +9,10 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="fixed top-0 z-50 w-full lg:shadow-md bg-primary" id="mynavbar">
+      <nav
+        className="fixed top-0 z-50 w-full lg:shadow-md bg-primary"
+        id="mynavbar"
+      >
         <div className="container mx-auto xl:max-w-[1300px] flex min-h-16 items-center justify-between px-4 lg:px-0">
           <Link
             to="/"
@@ -39,10 +42,17 @@ const Navbar = () => {
             )}
           </button>
 
+          {isOpen && (
+            <div
+              className="fixed inset-0 z-40 bg-primary/50 backdrop-blur-xl shadow-2xl"
+              onClick={() => setIsOpen(false)}
+            />
+          )}
+
           <div
             className={`${
-              isOpen ? "translate-x-0" : "translate-x-full"
-            } fixed right-0 top-0 z-50 h-screen w-72 py-[6rem] lg:py-0 px-5 lg:px-0 bg-primary lg:bg-transparent shadow-xl lg:shadow-none transition-transform duration-400 lg:static lg:block lg:h-auto lg:w-auto lg:translate-x-0`}
+              isOpen ? "translate-x-0 shadow-[-8px_0_15px_rgba(0,0,0,0.20)]" : "translate-x-full"
+            } sidebar`}
           >
             <ul className="flex flex-col lg:items-center gap-4 px-1 lg:flex-row lg:p-0 font-semibold">
               <li>
@@ -62,31 +72,19 @@ const Navbar = () => {
               </li>
 
               <li>
-                <a
-                  href="#tools"
-                  className="nav-link"
-                  onClick={closeMenu}
-                >
+                <a href="#tools" className="nav-link" onClick={closeMenu}>
                   Tech Stack
                 </a>
               </li>
 
               <li>
-                <a
-                  href="#projects"
-                  className="nav-link"
-                  onClick={closeMenu}
-                >
+                <a href="#projects" className="nav-link" onClick={closeMenu}>
                   Projects
                 </a>
               </li>
 
               <li>
-                <a
-                  href="#contact"
-                  className="nav-link"
-                  onClick={closeMenu}
-                >
+                <a href="#contact" className="nav-link" onClick={closeMenu}>
                   Contact
                 </a>
               </li>

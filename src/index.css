@@ -126,6 +126,7 @@
     @apply
     block
     text-lg
+    text-secondary
     font-figtree
     font-light
     hover:text-accent
@@ -137,6 +138,19 @@
     lg:p-0
     shadow-[0_0_10px_rgba(0,0,0,0.2)]
     lg:shadow-none
+  }
+
+  .sidebar {
+    @apply
+    fixed
+    right-0 top-0 z-50 
+    h-screen w-72 
+    py-[6rem] lg:py-0 
+    px-5 lg:px-0 
+    bg-primary lg:bg-transparent 
+    transition-transform duration-400 
+    lg:static lg:block 
+    lg:h-auto lg:w-auto lg:translate-x-0
   }
   
 }
