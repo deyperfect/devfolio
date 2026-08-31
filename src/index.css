@@ -121,6 +121,15 @@
     hover:border-accent
     hover:text-accent
   }
+
+  .nav-link {
+    @apply
+    block
+    font-figtree
+    lg:text-xl
+    hover:text-accent
+  }
+  
 }
 
 :root {

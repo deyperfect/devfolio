@@ -48,7 +48,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/"
-                  className="block hover:text-gray-500"
+                  className="nav-link"
                   onClick={() => {
                     closeMenu();
                     window.scrollTo({
@@ -64,7 +64,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#tools"
-                  className="block hover:text-gray-500"
+                  className="nav-link"
                   onClick={closeMenu}
                 >
                   Tech Stack
@@ -74,7 +74,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#projects"
-                  className="block hover:text-gray-500"
+                  className="nav-link"
                   onClick={closeMenu}
                 >
                   Projects
@@ -84,7 +84,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#contact"
-                  className="block hover:text-gray-500"
+                  className="nav-link"
                   onClick={closeMenu}
                 >
                   Contact
