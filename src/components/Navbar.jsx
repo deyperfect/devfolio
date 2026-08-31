@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { IoIosMenu } from "react-icons/io";
+import { IoCloseCircleOutline } from "react-icons/io5";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
             aria-label="Open navigation menu"
             aria-expanded={isOpen}
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <IoCloseCircleOutline size={24} /> : <IoIosMenu size={24} />}
           </button>
 
           <div
