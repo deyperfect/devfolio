@@ -129,6 +129,14 @@
     font-figtree
     font-light
     hover:text-accent
+    bg-primary
+    lg:bg-transparent
+    rounded-lg
+    lg:rounded-none
+    p-3
+    lg:p-0
+    shadow-[0_0_10px_rgba(0,0,0,0.2)]
+    lg:shadow-none
   }
   
 }
