@@ -1,29 +1,7 @@
-
-
 const LandingText = () => {
   return (
     <div className="col-span-12 md:col-span-7 lg:col-span-9 mx-auto mt-[3rem] md:mt-0">
       <div className="md:pr-8">
-        <div
-          className="mb-6
-                hidden
-                md:inline-flex 
-                items-center
-                gap-2.5
-                font-figtree
-                text-[0.9rem] 
-                font-semibold
-                text-tertiary
-                animate-[fadeInUp_1s_ease_0.3s_backwards]"
-        >
-          <span
-            className="size-2 shrink-0 rounded-full
-                bg-accent
-                shadow-[0_0_0_4px_color-mix(in_srgb,var(--color-accent)_20%,transparent)]"
-          ></span>
-          Open to Full Stack / Frontend / Backend junior roles
-        </div>
-
         <h1>Full Stack Web Developer</h1>
 
         <div
