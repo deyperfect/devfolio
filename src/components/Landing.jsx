@@ -5,6 +5,7 @@ const Landing = () => {
   return (
     <section
       className="lg:min-h-screen lg:flex lg:items-center mt-[6.5rem] lg:mt-0"
+      id="hero"
     >
       <div className="grid gap-5 grid-cols-12 px-5" id="landing-row">
         

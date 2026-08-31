@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <section className="lg:min-h-screen lg:flex lg:flex-col lg:items-center lg:justify-center">
+    <section id="contact" className="lg:min-h-screen lg:flex lg:flex-col lg:items-center lg:justify-center">
       <div>
         <SectionHeader
           title="Let's Connect"

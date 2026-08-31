@@ -4,7 +4,7 @@ import SectionHeader from "./SectionHeader";
 
 const Projects = () => {
   return (
-    <section>
+    <section id="projects">
       <div>
         <SectionHeader
           title="Selected Work"
