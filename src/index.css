@@ -148,6 +148,12 @@
   --site-accent-2: hsl(0, 0%, 25.1%);
 }
 
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  background-color: var(--site-primary);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
