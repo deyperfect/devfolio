@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="container mx-auto xl:max-w-[1300px] flex min-h-16 items-center justify-between px-4 lg:px-0">
           <Link
             to="/"
-            className="text-xl font-bold"
+            className="text-xl lg:text-[1.6rem] text-accent font-jakarta font-extrabold"
             onClick={() => {
               closeMenu();
               window.scrollTo({
