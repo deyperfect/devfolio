@@ -9,7 +9,6 @@
         "demo": "https://lapis-blush.vercel.app/",
         "tech": [
             "Vue",
-            "Node.js",
             "Express.js",
             "MongoDB",
             "Bootstrap"
@@ -26,7 +25,6 @@
         "demo": "https://further-eight.vercel.app/",
         "tech": [
             "Vue",
-            "Node.js",
             "Express.js",
             "MongoDB",
             "Bootstrap"
