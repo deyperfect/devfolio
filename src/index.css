@@ -148,15 +148,16 @@
     text-secondary
     font-figtree
     font-light
-    hover:text-accent
     bg-primary
     lg:bg-transparent
-    rounded-lg
+    hover:bg-tertiary/10
+    lg:hover:bg-transparent
+    rounded-2xl
     lg:rounded-none
-    p-3
+    py-3 px-5
     lg:p-0
-    shadow-[0_0_10px_rgba(0,0,0,0.2)]
-    lg:shadow-none
+    flex items-center 
+    gap-4
   }
 
   .sidebar {

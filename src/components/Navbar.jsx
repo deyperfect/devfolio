@@ -38,7 +38,7 @@ const Navbar = () => {
           {/* Hamburger Icon for Mobile and Tablet */}
           <button
             type="button"
-            className="lg:hidden fixed right-5 top-5 z-55 flex items-center justify-center text-secondary rounded-md p-2 shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+            className="lg:hidden fixed right-5 top-5 z-55 flex items-center justify-center text-secondary bg-primary rounded-md p-2 shadow-[0_0_10px_rgba(0,0,0,0.2)]"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Open navigation menu"
             aria-expanded={isOpen}
