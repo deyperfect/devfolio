@@ -151,7 +151,7 @@
     py-[6rem]
     px-5 
     bg-primary  
-    transition-transform duration-400 
+    transition-transform duration-300 ease-in-out
     lg:hidden
   }
   
