@@ -75,11 +75,11 @@
   h1 {
     @apply
     mb-5
-    font-bold
+    font-extrabold
     font-jakarta
     text-accent
     animate-[fadeInUp_1s_ease]
-    text-[1.5rem]
+    text-[1.7rem]
     md:text-[2.5rem]
     lg:text-[4rem]
   }
@@ -89,23 +89,42 @@
     container
     mx-auto
     xl:max-w-[1300px]
+    py-[3rem] 
+    md:py-[6rem]
+    lg:py-[10rem]
   }
   
 }
 
 @layer components {
-  .button {
+  .button-accent {
     @apply
-    rounded-lg
-    px-6 py-2
-    lg:text-xl
+    flex justify-center items-center
+    rounded-md
     text-center
     font-figtree
-    font-semibold
     text-primary
-    transition-all duration-300
-    hover:-translate-y-[3px]
-    hover:shadow-[0_10px_20px_rgba(0,0,0,0.2)]
+    hover:text-accent
+    bg-accent
+    hover:bg-primary 
+    border border-transparent
+    hover:border hover:border-accent 
+    transition-colors
+  }
+
+  .button-secondary {
+    @apply
+    flex justify-center items-center
+    rounded-md
+    text-center
+    font-figtree
+    text-primary
+    hover:text-secondary
+    bg-secondary
+    hover:bg-primary 
+    border border-transparent
+    hover:border hover:border-secondary 
+    transition-colors
   }
 
   .icon-link {
@@ -121,6 +140,38 @@
     hover:border-accent
     hover:text-accent
   }
+
+  .nav-link {
+    @apply
+    block
+    text-lg
+    text-secondary
+    font-figtree
+    font-light
+    bg-primary
+    lg:bg-transparent
+    hover:bg-tertiary/10
+    lg:hover:bg-transparent
+    rounded-2xl
+    lg:rounded-none
+    py-3 px-5
+    lg:p-0
+    flex items-center 
+    gap-4
+  }
+
+  .sidebar {
+    @apply
+    fixed
+    right-0 top-0 z-50 
+    h-screen w-72 
+    py-[6rem]
+    px-5 
+    bg-primary  
+    transition-transform duration-300 ease-in-out
+    lg:hidden
+  }
+  
 }
 
 :root {
@@ -137,6 +188,12 @@
   --site-tertiary: hsl(223.85, 12.15%, 58.04%);
   --site-accent: hsl(355.75, 69.4%, 64.12%);
   --site-accent-2: hsl(0, 0%, 25.1%);
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  background-color: var(--site-primary);
 }
 
 @media (prefers-reduced-motion: reduce) {

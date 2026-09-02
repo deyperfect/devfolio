@@ -1,11 +1,10 @@
-
 const Footer = () => {
   return (
     <footer className="w-full">
-      <div className="container mx-auto flex min-h-16 items-center justify-between px-6 md:px-4">
+      <div className="container mx-auto flex xl:max-w-[1300px] min-h-16 items-center justify-between px-6 md:px-0">
         
         {/* Copyright */}
-        <p className="text-sm text-secondary">
+        <p className="font-figtree text-secondary md:text-lg">
           &copy; 2026 Edryl Palinis
         </p>
 

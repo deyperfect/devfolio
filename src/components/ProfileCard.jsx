@@ -1,4 +1,5 @@
 import Socials from "../components/Socials.jsx"
+import { PiMapPinLineLight } from "react-icons/pi";
 
 const ProfileCard = () => {
   return (
@@ -27,10 +28,11 @@ const ProfileCard = () => {
           />
         </div>
 
-        <p className="mb-1 text-2xl font-bold font-jakarta text-secondary">
+        <p className="mb-1 text-2xl lg:text-3xl font-extrabold font-jakarta text-secondary">
           Edryl Palinis
         </p>
-        <p className="mb-4 font-figtree text-[0.95rem] text-tertiary">
+        <p className="flex items-center gap-1 mb-4 font-figtree text-md text-tertiary">
+          <PiMapPinLineLight className="text-md" />
           Bulacan, Philippines
         </p>
 

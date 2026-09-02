@@ -5,7 +5,7 @@ import SectionHeader from "./SectionHeader.jsx";
 const TechStack = () => {
   return (
     
-    <section>
+    <section id="tools">
 
       <div >
         <SectionHeader

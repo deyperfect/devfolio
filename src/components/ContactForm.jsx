@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Notyf } from "notyf";
 import "notyf/notyf.min.css";
+import { RiSendInsLine } from "react-icons/ri";
+import { LuSend } from "react-icons/lu";
 
 const notyf = new Notyf({
   duration: 3000,
@@ -137,8 +139,14 @@ const ContactForm = () => {
         </span>
       </div>
 
-      <button type="submit" disabled={isLoading} className="button w-full bg-accent">
-        {isLoading ? "Sending..." : "Send Message"}
+      <button type="submit" disabled={isLoading} className="button-accent w-full flex justify-center items-center gap-1 px-6 py-2 lg:text-xl font-bold">
+        {isLoading ? ( 
+          "Sending..." 
+          ) : (
+            <>
+            Send Message <LuSend />
+            </>
+            )} 
       </button>
     </form>
   );
