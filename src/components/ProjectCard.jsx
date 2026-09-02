@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
         className="aspect-video w-full object-cover"
       />
 
-      {/* Header */}
+      {/* Title and Description */}
       <div className="grid gap-2 p-6">
         <div className="mb-3 flex flex-col gap-3">
           <h3 className="font-figtree text-2xl font-semibold leading-none tracking-tight">
@@ -36,10 +36,11 @@ const ProjectCard = ({ project }) => {
         </p>
       </div>
 
-      {/* Footer */}
+      {/* Buttons */}
       <div className="flex gap-4 p-6 pt-0">
         <a
-          className="flex justify-center items-center gap-1 w-full rounded-md bg-black px-4 py-2 text-center text-md font-medium text-primary transition-colors hover:bg-accent-2/50 hover:text-secondary"
+          // className="flex justify-center items-center gap-1 w-full rounded-md bg-black px-4 py-2 text-center text-md font-medium text-primary transition-colors hover:bg-accent-2/50 hover:text-secondary"
+          className="button-secondary w-full gap-2 px-4 py-2 font-semibold"
           href={project.code}
           target="_blank"
           rel="noopener noreferrer"
@@ -49,12 +50,12 @@ const ProjectCard = ({ project }) => {
         </a>
 
         <a
-          className="flex justify-center items-center w-full rounded-md bg-accent px-4 py-2 text-center text-md font-medium text-primary transition-colors hover:bg-accent/80 hover:text-secondary"
+          className="button-accent w-full gap-1 px-4 py-2 font-semibold"
           href={project.demo}
           target="_blank"
           rel="noopener noreferrer"
         >
-          Live Demo 
+          Live Demo
           <ArrowUpRight />
         </a>
       </div>

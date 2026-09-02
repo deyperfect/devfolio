@@ -137,7 +137,7 @@ const ContactForm = () => {
         </span>
       </div>
 
-      <button type="submit" disabled={isLoading} className="button w-full bg-accent">
+      <button type="submit" disabled={isLoading} className="button-accent w-full px-6 py-2 lg:text-xl font-bold">
         {isLoading ? "Sending..." : "Send Message"}
       </button>
     </form>

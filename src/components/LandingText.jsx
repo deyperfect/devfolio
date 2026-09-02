@@ -31,8 +31,7 @@ const LandingText = () => {
         <div className="flex flex-col gap-4 md:flex-row">
           <a
             href="#projects"
-            className="button
-                bg-accent"
+            className="button-accent font-semibold px-6 py-2 lg:text-xl "
           >
             View My Work
           </a>
@@ -40,8 +39,7 @@ const LandingText = () => {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="button
-                bg-tertiary"
+            className="button-secondary font-semibold px-6 py-2 lg:text-xl "
           >
             View Resume
           </a>

@@ -97,18 +97,34 @@
 }
 
 @layer components {
-  .button {
+  .button-accent {
     @apply
-    rounded-lg
-    px-6 py-2
-    lg:text-xl
+    flex justify-center items-center
+    rounded-md
     text-center
     font-figtree
-    font-semibold
     text-primary
-    transition-all duration-300
-    hover:-translate-y-[3px]
-    hover:shadow-[0_10px_20px_rgba(0,0,0,0.2)]
+    hover:text-accent
+    bg-accent
+    hover:bg-primary 
+    border border-transparent
+    hover:border hover:border-accent 
+    transition-colors
+  }
+
+  .button-secondary {
+    @apply
+    flex justify-center items-center
+    rounded-md
+    text-center
+    font-figtree
+    text-primary
+    hover:text-secondary
+    bg-secondary
+    hover:bg-primary 
+    border border-transparent
+    hover:border hover:border-secondary 
+    transition-colors
   }
 
   .icon-link {
