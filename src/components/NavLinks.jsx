@@ -1,10 +1,13 @@
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import { RiHomeLine } from "react-icons/ri";
+import { MdComputer, MdOutlineFolderOpen } from "react-icons/md";
+import { IoMailOutline } from "react-icons/io5";
 
 const navLinks = [
-  { label: "Home", href: "/", type: "route" },
-  { label: "Tech Stack", href: "tools", type: "section" },
-  { label: "Projects", href: "projects", type: "section"  },
-  { label: "Contact", href: "contact", type: "section" },
+  { label: "Home", href: "/", icon: RiHomeLine, type: "route" },
+  { label: "Tech Stack", href: "tools", icon: MdComputer, type: "section" },
+  { label: "Projects", href: "projects", icon: MdOutlineFolderOpen, type: "section"  },
+  { label: "Contact", href: "contact", icon: IoMailOutline, type: "section" },
 ];
 
 const NavLinks = ({ closeMenu }) => {
@@ -46,6 +49,7 @@ const NavLinks = ({ closeMenu }) => {
                 className="nav-link"
                 onClick={handleHomeClick}
               >
+                {link.icon && <link.icon className="lg:hidden text-lg" />}
                 {link.label}
               </Link>
             ) : (
@@ -54,6 +58,7 @@ const NavLinks = ({ closeMenu }) => {
                 className="nav-link"
                 onClick={(e) => handleSectionClick(e, link.href)}
               >
+                {link.icon && <link.icon className="lg:hidden text-lg" />}
                 {link.label}
               </a>
             )}
