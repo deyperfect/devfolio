@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="mx-auto flex flex-col h-full w-full md:max-w-sm justify-center overflow-hidden rounded-xl border pt-0">
+    <div className="mx-auto flex flex-col h-full w-full md:max-w-sm justify-center overflow-hidden rounded-xl border border-tertiary/30 pt-0">
       {/* Image */}
       <img
         src={project.image}
