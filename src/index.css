@@ -59,7 +59,7 @@
   src: url('/fonts/figtree-v9-latin-regular.woff2') format('woff2');
 }
 
-@theme {
+@theme inline {
   --font-jakarta: 'Plus Jakarta Sans', sans-serif;
   --font-inconsolata: 'Inconsolata', monospace;
   --font-figtree: 'Figtree', sans-serif;
@@ -194,6 +194,11 @@ html {
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
   background-color: var(--site-primary);
+}
+
+body {
+  background-color: var(--site-primary);
+  color: var(--site-secondary);
 }
 
 @media (prefers-reduced-motion: reduce) {
