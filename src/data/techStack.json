@@ -22,7 +22,7 @@
     },
     {
         "id": 6,
-        "name": "MongoDB"
+        "name": "Tailwind CSS"
     },
     {
         "id": 7,
@@ -38,14 +38,14 @@
     },
     {
         "id": 10,
-        "name": "Bootstrap"
+        "name": "MongoDB"
     },
     {
         "id": 11,
-        "name": "VSCode"
+        "name": "AWS"
     },
     {
         "id": 12,
-        "name": "Figma"
+        "name": "Bootstrap"
     }
 ]    
