@@ -1,5 +1,5 @@
-import TechStackCard from "./TechStackCard.jsx";
-import technologies from "../data/techStack.json";
+import TechStackCard from "./TechnologiesCard.jsx";
+import technologies from "../data/technologies.json";
 import SectionHeader from "./SectionHeader.jsx";
 
 const TechStack = () => {
