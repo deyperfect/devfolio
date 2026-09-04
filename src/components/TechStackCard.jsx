@@ -23,11 +23,11 @@ const TechStackCard = ({ technology }) => {
   const background = tech.background;
 
   return (
-    <div className="flex flex-col items-center justify-center gap-[0.5rem] py-3 px-2 rounded-xl border border-transparent bg-[color-mix(in_srgb,var(--color-tertiary)_20%,transparent)]">
+    <div className="flex flex-col items-center justify-center gap-[0.5rem] py-3 px-2 rounded-xl border border-transparent ">
       <div className="flex items-center justify-center">
-        <Icon className={`size-8 ${color} ${background ?? "bg-transparent"}`} />
+        <Icon className={`text-[4rem] ${color} ${background ?? "bg-transparent"}`} />
       </div>
-      <p className="text-[0.7rem] text-center text-secondary font-figtree m-0">
+      <p className="text-center text-tertiary font-figtree m-0">
         {technology.name}
       </p>
     </div>
