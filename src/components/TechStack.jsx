@@ -9,7 +9,7 @@ const TechStack = () => {
 
       <div >
         <SectionHeader
-         title="Skills & Technologies"
+         title="Technologies"
          subtitle="What I currently work with"
         />
       </div>
