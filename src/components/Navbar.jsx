@@ -2,12 +2,16 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoIosMenu } from "react-icons/io";
 import { IoCloseCircleOutline } from "react-icons/io5";
+import { useActiveSection } from "../hooks/useActiveSection";
 import NavLinks from "./NavLinks";
 import ThemeToggle from "./Theme";
+
+const sectionIds = ["hero", "tools", "projects", "contact"];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const closeMenu = () => setIsOpen(false);
+  const activeSection = useActiveSection(sectionIds, 100);
 
   return (
     <header>
@@ -32,7 +36,7 @@ const Navbar = () => {
           {/* Desktop Navigation Links */}
           <div className="hidden lg:block lg:flex lg:items-center lg:justify-between lg:gap-6">
             <ul className="flex items-center gap-4 font-semibold">
-              <NavLinks />
+              <NavLinks activeSection={activeSection}/>
             </ul>
             <ThemeToggle />
           </div>
@@ -69,7 +73,7 @@ const Navbar = () => {
             } sidebar`}
           >
             <ul className="flex flex-col lg:items-center gap-4 px-1 lg:flex-row lg:p-0 font-semibold">
-              <NavLinks closeMenu={closeMenu} />
+              <NavLinks closeMenu={closeMenu} activeSection={activeSection} />
             </ul>
             < ThemeToggle />
           </div>

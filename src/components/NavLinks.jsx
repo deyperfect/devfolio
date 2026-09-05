@@ -4,13 +4,37 @@ import { MdComputer, MdOutlineFolderOpen } from "react-icons/md";
 import { IoMailOutline } from "react-icons/io5";
 
 const navLinks = [
-  { label: "Home", href: "/", icon: RiHomeLine, type: "route" },
-  { label: "Tech Stack", href: "tools", icon: MdComputer, type: "section" },
-  { label: "Projects", href: "projects", icon: MdOutlineFolderOpen, type: "section"  },
-  { label: "Contact", href: "contact", icon: IoMailOutline, type: "section" },
+  {
+    label: "Home",
+    href: "/",
+    icon: RiHomeLine,
+    type: "route",
+    sectionId: "hero",
+  },
+  {
+    label: "Tech Stack",
+    href: "tools",
+    icon: MdComputer,
+    type: "section",
+    sectionId: "tools",
+  },
+  {
+    label: "Projects",
+    href: "projects",
+    icon: MdOutlineFolderOpen,
+    type: "section",
+    sectionId: "projects",
+  },
+  {
+    label: "Contact",
+    href: "contact",
+    icon: IoMailOutline,
+    type: "section",
+    sectionId: "contact",
+  },
 ];
 
-const NavLinks = ({ closeMenu }) => {
+const NavLinks = ({ closeMenu, activeSection }) => {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -40,13 +64,18 @@ const NavLinks = ({ closeMenu }) => {
 
   return (
     <>
-      {navLinks.map((link) => (
-        
-        <li key={link.label}>
-          {link.type === "route" ? (
+      {navLinks.map((link) => {
+        const isActive = link.sectionId === activeSection;
+        return (
+          <li key={link.label}>
+            {link.type === "route" ? (
               <Link
                 to={link.href}
-                className="nav-link"
+                className={`nav-link ${
+                  isActive
+                    ? "active"
+                    : ""
+                }`}
                 onClick={handleHomeClick}
               >
                 {link.icon && <link.icon className="lg:hidden text-lg" />}
@@ -55,19 +84,20 @@ const NavLinks = ({ closeMenu }) => {
             ) : (
               <a
                 href={`#${link.href}`}
-                className="nav-link"
+                className={`nav-link ${
+                  isActive ? "active" : ""
+                }`}
                 onClick={(e) => handleSectionClick(e, link.href)}
               >
                 {link.icon && <link.icon className="lg:hidden text-lg" />}
                 {link.label}
               </a>
             )}
-        </li>
-        
-      ))}
+          </li>
+        );
+      })}
     </>
   );
 };
-
 
 export default NavLinks;
