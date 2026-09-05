@@ -150,8 +150,9 @@
     font-light
     bg-primary
     lg:bg-transparent
-    hover:bg-tertiary/10
+    hover:bg-accent/30
     lg:hover:bg-transparent
+    lg:hover:text-accent
     rounded-2xl
     lg:rounded-none
     py-3 px-5
@@ -171,7 +172,26 @@
     transition-transform duration-300 ease-in-out
     lg:hidden
   }
-  
+
+  .active {
+    @apply
+    relative
+    bg-accent lg:bg-transparent
+    hover:bg-accent lg:hover:bg-transparent
+    hover:brightness-110
+    text-primary lg:text-secondary
+  }
+
+  .dot {
+    @apply
+    absolute
+    bg-accent  
+    w-1.5 
+    h-1.5 
+    rounded-full 
+    transition-all
+    duration-200 ease-in-out
+  }
 }
 
 :root {
