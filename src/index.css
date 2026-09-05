@@ -279,12 +279,12 @@
 html {
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
-  background-color: var(--site-primary);
+  background-color: var(--background);
 }
 
 body {
-  background-color: var(--site-primary);
-  color: var(--site-secondary);
+  background-color: var(--background);
+  color: var(--text);
 }
 
 @media (prefers-reduced-motion: reduce) {
