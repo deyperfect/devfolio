@@ -16,13 +16,13 @@ const Navbar = () => {
   return (
     <header>
       <nav
-        className="fixed top-0 z-50 w-full lg:shadow-md bg-transparent lg:bg-primary"
+        className="fixed top-0 z-50 w-full lg:shadow-md bg-primary lg:bg-primary"
         id="mynavbar"
       >
         <div className="container mx-auto xl:max-w-[1300px] flex min-h-16 items-center justify-between px-4 lg:px-0">
           <Link
             to="/"
-            className="text-xl lg:text-[1.6rem] text-accent font-jakarta font-extrabold hidden lg:block"
+            className="text-2xl lg:text-[1.6rem] text-accent font-jakarta font-extrabold"
             onClick={() => {
               window.scrollTo({
                 top: 0,
@@ -30,7 +30,7 @@ const Navbar = () => {
               });
             }}
           >
-            Edryl Palinis
+            edrylp
           </Link>
 
           {/* Desktop Navigation Links */}
@@ -44,7 +44,7 @@ const Navbar = () => {
           {/* Hamburger Icon for Mobile and Tablet */}
           <button
             type="button"
-            className="lg:hidden fixed right-5 top-5 z-55 flex items-center justify-center text-secondary bg-primary rounded-md p-2 shadow-[0_0_10px_rgba(0,0,0,0.2)]"
+            className="lg:hidden z-55 flex items-center justify-center text-secondary bg-primary rounded-md p-2 shadow-[0_0_10px_rgba(0,0,0,0.2)]"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Open navigation menu"
             aria-expanded={isOpen}
