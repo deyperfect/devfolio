@@ -87,7 +87,9 @@
     mb-5
     font-extrabold
     font-jakarta
-    text-accent
+    text-transparent 
+    bg-clip-text
+    bg-linear-primary-accent
     animate-[fadeInUp_1s_ease]
     text-[1.7rem]
     md:text-[2.5rem]
@@ -107,33 +109,33 @@
 }
 
 @layer components {
-  .button-accent {
-    @apply
-    flex justify-center items-center
-    rounded-md
-    text-center
-    font-figtree
-    text-primary
-    hover:text-accent
-    bg-accent
-    hover:bg-primary 
-    border border-transparent
-    hover:border hover:border-accent 
-    transition-colors
-  }
-
   .button-secondary {
     @apply
     flex justify-center items-center
     rounded-md
     text-center
     font-figtree
-    text-primary
+    text-text
     hover:text-secondary
-    bg-secondary
-    hover:bg-primary 
+    bg-secondary/40
+    hover:bg-background 
     border border-transparent
     hover:border hover:border-secondary 
+    transition-colors
+  }
+
+  .button-primary {
+    @apply
+    flex justify-center items-center
+    rounded-md
+    text-center
+    font-figtree
+    text-background
+    hover:text-primary
+    bg-primary
+    hover:bg-background 
+    border border-transparent
+    hover:border hover:border-primary 
     transition-colors
   }
 
@@ -143,12 +145,12 @@
     flex size-[38px]
     items-center justify-center
     rounded-full
-    border border-accent
-    text-accent
+    border border-primary/50
+    text-primary/80
     transition-all duration-250
     hover:-translate-y-[3px]
-    hover:border-accent
-    hover:text-accent
+    hover:border-secondary
+    hover:text-secondary
   }
 
   .nav-link {

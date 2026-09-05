@@ -12,7 +12,7 @@ const ProfileCard = () => {
             size-[250px]
             overflow-hidden
             rounded-full
-            border-[3px] border-accent
+            border-[3px] border-accent/40
             p-[0.3rem]
             shadow-[0_0_12px_var(--color-accent)]
             transition-all duration-1000
@@ -28,10 +28,10 @@ const ProfileCard = () => {
           />
         </div>
 
-        <p className="mb-1 text-2xl lg:text-3xl font-extrabold font-jakarta text-secondary">
+        <p className="mb-1 text-2xl lg:text-3xl font-extrabold font-jakarta text-primary">
           Edryl Palinis
         </p>
-        <p className="flex items-center gap-1 mb-4 font-figtree text-md text-tertiary">
+        <p className="flex items-center gap-1 mb-4 font-figtree text-md text-text">
           <PiMapPinLineLight className="text-md" />
           Bulacan, Philippines
         </p>
