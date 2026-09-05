@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import { MdOutlineDarkMode } from "react-icons/md";
-import { PiSunLight } from "react-icons/pi";
 import { BsLightbulb, BsLightbulbOff } from "react-icons/bs";
 
 const ThemeToggle = () => {
@@ -36,7 +34,7 @@ const ThemeToggle = () => {
     <button
       onClick={switchTheme}
       aria-label="Toggle theme"
-      className="relative flex items-center justify-center w-8 h-8 rounded-full bg-primary text-xl border border-tertiary/50 overflow-hidden"
+      className="relative flex items-center justify-center w-8 h-8 rounded-full bg-background text-xl border border-accent/50 overflow-hidden"
     >
       <BsLightbulb
         className={`absolute text-yellow-400 transition-all duration-300 ease-in-out ${

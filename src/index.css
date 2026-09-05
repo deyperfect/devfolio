@@ -155,10 +155,10 @@
     @apply
     block
     text-lg
-    text-secondary
+    text-text
     font-figtree
     font-light
-    bg-primary
+    bg-background
     lg:bg-transparent
     hover:bg-accent/30
     lg:hover:bg-transparent
@@ -178,7 +178,7 @@
     h-screen w-72 
     py-[6rem]
     px-5 
-    bg-primary  
+    bg-background  
     transition-transform duration-300 ease-in-out
     lg:hidden
   }
@@ -189,7 +189,7 @@
     bg-accent lg:bg-transparent
     hover:bg-accent lg:hover:bg-transparent
     hover:brightness-110
-    text-primary lg:text-secondary
+    text-background lg:text-text
   }
 
   .dot {
