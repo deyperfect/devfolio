@@ -64,11 +64,21 @@
   --font-inconsolata: 'Inconsolata', monospace;
   --font-figtree: 'Figtree', sans-serif;
 
-  --color-primary: var(--site-primary);
-  --color-secondary: var(--site-secondary);
-  --color-tertiary: var(--site-tertiary);
-  --color-accent: var(--site-accent);
-  --color-accent-2: var(--site-accent-2);
+  --color-background: var(--background);
+  --color-text: var(--text);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+
+  /* Linear gradients */
+  --background-image-linear-primary-secondary: var(--linear-primary-secondary);
+  --background-image-linear-primary-accent: var(--linear-primary-accent);
+  --background-image-linear-secondary-accent: var(--linear-secondary-accent);
+
+  /* Radial gradients */
+  --background-image-radial-primary-secondary: var(--radial-primary-secondary);
+  --background-image-radial-primary-accent: var(--radial-primary-accent);
+  --background-image-radial-secondary-accent: var(--radial-secondary-accent);
 }
 
 @layer base {
@@ -133,8 +143,8 @@
     flex size-[38px]
     items-center justify-center
     rounded-full
-    border border-tertiary
-    text-tertiary
+    border border-accent
+    text-accent
     transition-all duration-250
     hover:-translate-y-[3px]
     hover:border-accent
@@ -195,19 +205,75 @@
 }
 
 :root {
-  --site-primary: hsl(220, 20%, 97%);
-  --site-secondary: hsl(220, 15%, 15%);
-  --site-tertiary: hsl(220, 10%, 45%);
-  --site-accent: hsl(355.75, 69.4%, 56%);
-  --site-accent-2: hsl(0, 0%, 25.1%);
+  --text: hsl(242, 65%, 9%);
+  --background: hsl(237, 68%, 94%);
+  --primary: hsl(241, 65%, 26%);
+  --secondary: hsl(311, 65%, 68%);
+  --accent: hsl(338, 66%, 42%);
+
+  /* Linear gradients */
+  --linear-primary-secondary: linear-gradient(
+    var(--primary),
+    var(--secondary)
+  );
+  --linear-primary-accent: linear-gradient(
+    var(--primary),
+    var(--accent)
+  );
+  --linear-secondary-accent: linear-gradient(
+    var(--secondary),
+    var(--accent)
+  );
+
+  /* Radial gradients */
+  --radial-primary-secondary: radial-gradient(
+    var(--primary),
+    var(--secondary)
+  );
+  --radial-primary-accent: radial-gradient(
+    var(--primary),
+    var(--accent)
+  );
+  --radial-secondary-accent: radial-gradient(
+    var(--secondary),
+    var(--accent)
+  );
 }
 
 .dark {
-  --site-primary: hsl(222.86, 13.73%, 10%);
-  --site-secondary: hsl(222.86, 13.73%, 90%);
-  --site-tertiary: hsl(223.85, 12.15%, 58.04%);
-  --site-accent: hsl(355.75, 69.4%, 64.12%);
-  --site-accent-2: hsl(0, 0%, 25.1%);
+  --text: hsl(242, 65%, 91%);
+  --background: hsl(237, 68%, 6%);
+  --primary: hsl(241, 65%, 74%);
+  --secondary: hsl(311, 65%, 32%);
+  --accent: hsl(338, 66%, 58%);
+
+  /* Linear gradients */
+  --linear-primary-secondary: linear-gradient(
+    var(--primary),
+    var(--secondary)
+  );
+  --linear-primary-accent: linear-gradient(
+    var(--primary),
+    var(--accent)
+  );
+  --linear-secondary-accent: linear-gradient(
+    var(--secondary),
+    var(--accent)
+  );
+
+  /* Radial gradients */
+  --radial-primary-secondary: radial-gradient(
+    var(--primary),
+    var(--secondary)
+  );
+  --radial-primary-accent: radial-gradient(
+    var(--primary),
+    var(--accent)
+  );
+  --radial-secondary-accent: radial-gradient(
+    var(--secondary),
+    var(--accent)
+  );
 }
 
 html {
